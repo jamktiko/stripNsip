@@ -1,15 +1,18 @@
 <script lang="ts">
 	import Kortti from './Kortti.svelte';
-
+	let pakka1 = $state('parisuhdepeli');
+	let pakka2 = $state('Juoma');
+	let pakka3 = $state('NeverhaveIever');
 	function klikkaus() {
 		console.log('toimii vieläkin');
 	}
 </script>
 
-<button
-	class=" min-h-65 max-w-50 min-w-50 text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white"
-	onclick={klikkaus}>paina tätä</button
->
+<main>
+	<Kortti onclick={klikkaus} text={pakka1}></Kortti>
+	<Kortti onclick={klikkaus} text={pakka2}></Kortti>
+	<Kortti onclick={klikkaus} text={pakka3}></Kortti>
+</main>
 
 <style>
 </style>
