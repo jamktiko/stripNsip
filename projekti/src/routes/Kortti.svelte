@@ -2,16 +2,13 @@
 	interface Props {
 		text: string;
 		onclick: () => void;
-		class?: string;
+		className?: string;
+		id?: number;
 	}
-	let { text, onclick }: Props = $props();
+	let { text, onclick, className }: Props = $props();
 </script>
 
-<button
-	{onclick}
-	class="bg-jamkpinkki min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white
-"
->
+<button {onclick} class={className}>
 	<div>{text}</div>
 	<span> </span></button
 >
