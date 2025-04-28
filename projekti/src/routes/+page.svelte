@@ -25,8 +25,9 @@
 	<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi}></Kortti>
 </main>
 
-<style>
-	/* @theme {
+<style lang="postcss">
+	@reference "tailwindcss";
+	:global(html) {
 		--font-josefin: 'Josefin Sans', sans-serif;
 		--color-parisuhde: #ef476f;
 		--color-parisuhdeteksti: #ffe4ef;
@@ -40,5 +41,5 @@
 		--color-taustasininen: #cde8f1;
 		--color-taustapunanen: #ffe7ed;
 		--color-taustakeltanen: #fcffd6;
-	} */
+	}
 </style>
