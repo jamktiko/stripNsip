@@ -7,10 +7,12 @@
 
   <h1>{otsikko}</h1>
 
+  <!-- myöhemmin button-komponentti -->
   <button>?</button>
 </header>
 
 <style>
+  /* väliaikainen tyylimääritys */
   button {
     border: 1px solid black;
   }
