@@ -1,7 +1,11 @@
 <script lang="ts">
 	import '../app.css';
+	import Header from "./Header.svelte";
+	import type { Snippet } from 'svelte';
 
-	let { children } = $props();
+	let { children }: { children: Snippet } = $props();
 </script>
+
+<Header otsikko="Mitä peliä haluat pelata?" logo="logo.png" />
 
 {@render children()}
