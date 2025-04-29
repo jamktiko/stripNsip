@@ -1,5 +1,10 @@
 <script lang="ts">
 	import Kortti from './Kortti.svelte';
+	let { peliValittu = $bindable() } = $props();
+	// interface Props {
+	// 	peliValittu: $$bindable();
+	// }
+	// let { peliValittu }: Props = $props();
 	let pakka1Nimi = $state('parisuhdepeli');
 	let pakka2Nimi = $state('Juoma');
 	let pakka3Nimi = $state('NeverhaveIever');
@@ -13,7 +18,8 @@
 		'bg-green-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
 	);
 	function klikkaus() {
-		console.log('toimii vieläkin');
+		peliValittu = false;
+		console.log('painettu');
 	}
 </script>
 
