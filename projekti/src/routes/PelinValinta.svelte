@@ -17,9 +17,21 @@
 	let pakka3TailWind = $state(
 		'bg-green-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
 	);
+	let valittuPeli: number = $state(0);
 	function klikkaus() {
 		peliValittu = false;
-		console.log('painettu');
+		console.log('parisuhdepeli valittu');
+		valittuPeli = 1;
+	}
+	function klikkaus2() {
+		peliValittu = false;
+		console.log('Juomapeli valittu');
+		valittuPeli = 2;
+	}
+	function klikkaus3() {
+		peliValittu = false;
+		console.log('NHIE peli valittu');
+		valittuPeli = 3;
 	}
 </script>
 
@@ -29,8 +41,8 @@
 
 		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} id={1}></Kortti>
 
-		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} id={2}></Kortti>
+		<Kortti className={pakka2TailWind} onclick={klikkaus2} text={pakka2Nimi} id={2}></Kortti>
 
-		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} id={3}></Kortti>
+		<Kortti className={pakka3TailWind} onclick={klikkaus3} text={pakka3Nimi} id={3}></Kortti>
 	</div>
 </main>
