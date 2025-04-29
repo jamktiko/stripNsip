@@ -4,13 +4,14 @@
 		onclick: () => void;
 		className?: string;
 		id?: number;
+		ikoni: string;
 	}
-	let { text, onclick, className }: Props = $props();
+	let { text, onclick, className , ikoni }: Props = $props();
 </script>
 
 <button {onclick} class={className}>
-	<div>{text}</div>
-	<span> </span></button
+	<div class="pt-9 font-josefin text-2xl">{text}</div>
+	<span class={ikoni}> </span></button
 >
 
 <style>
