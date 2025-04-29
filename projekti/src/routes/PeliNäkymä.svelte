@@ -10,5 +10,6 @@
 	let { valittuPeli }: Props = $props();
 </script>
 
-<!-- {#if valittuPeli===1}
-{/if} -->
+{#if valittuPeli === 1}
+	<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} id={1}></Kortti>
+{/if}
