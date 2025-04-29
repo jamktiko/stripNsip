@@ -27,10 +27,10 @@
 	<div>
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
 
-		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi}></Kortti>
+		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} id={1}></Kortti>
 
-		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi}></Kortti>
+		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} id={2}></Kortti>
 
-		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi}></Kortti>
+		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} id={3}></Kortti>
 	</div>
 </main>

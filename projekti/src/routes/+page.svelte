@@ -11,3 +11,5 @@
 {#if peliValittu}
 	<PelinValinta bind:peliValittu></PelinValinta>
 {/if}
+
+<!-- {#if (peliValittu = false)}{/if} -->

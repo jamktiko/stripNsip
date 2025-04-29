@@ -3,9 +3,9 @@
 		text: string;
 		onclick: () => void;
 		className?: string;
-		id?: number;
+		id: number;
 	}
-	let { text, onclick, className }: Props = $props();
+	let { text, onclick, className, id }: Props = $props();
 </script>
 
 <button {onclick} class={className}>
