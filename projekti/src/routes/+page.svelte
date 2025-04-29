@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Header from "./Header.svelte";
+
 	import Kortti from './Kortti.svelte';
 	let pakka1Nimi = $state('parisuhdepeli');
 	let pakka2Nimi = $state('Juoma');
@@ -16,6 +18,8 @@
 		console.log('toimii vieläkin');
 	}
 </script>
+
+<Header otsikko="Mitä peliä haluat pelata?" logo="logo.png" />
 
 <main>
 	<div>
