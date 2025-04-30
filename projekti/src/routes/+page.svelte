@@ -1,45 +1,37 @@
 <script lang="ts">
+<<<<<<< HEAD
+=======
+	import Header from "./Header.svelte";
+	import logo1 from "../../static/favorite.png"
+>>>>>>> refs/remotes/origin/develop
 	import Kortti from './Kortti.svelte';
-	let pakka1Nimi = $state('parisuhdepeli');
-	let pakka2Nimi = $state('Juoma');
-	let pakka3Nimi = $state('NeverhaveIever');
+	let pakka1Nimi = $state('Pehmeitä paljastuksia');
+	let pakka2Nimi = $state('Kippis ja kulaus');
+	let pakka3Nimi = $state('Onko tullut kokeiltua?');
 	let pakka1TailWind = $state(
-		'bg-blue-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		"m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30"
 	);
 	let pakka2TailWind = $state(
-		'bg-red-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		"m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30"
 	);
 	let pakka3TailWind = $state(
-		'bg-parisuhde min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		"m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30"
 	);
+
+	let pakka1Logo = $state('material-symbols-outlined md-75')
+	let pakka2Logo = $state('material-symbols-outlined md-75')
+	let pakka3Logo = $state('material-symbols-outlined md-75') 
+
 	function klikkaus() {
 		console.log('toimii vieläkin');
 	}
 </script>
 
 <main>
-	<div></div>
-	<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-	<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi}></Kortti>
-	<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi}></Kortti>
-	<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi}></Kortti>
+	<div>
+		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
+		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} ikoni={pakka1Logo}></Kortti>
+		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} ikoni={pakka2Logo}></Kortti>
+		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} ikoni={pakka3Logo}></Kortti>
+	</div>
 </main>
-
-<style lang="postcss">
-	@reference "tailwindcss";
-	:global(html) {
-		--font-josefin: 'Josefin Sans', sans-serif;
-		--color-parisuhde: #ef476f;
-		--color-parisuhdeteksti: #ffe4ef;
-		--color-juomapeli: #ffd166;
-		--color-juompelikakkonen: #ffeab9;
-		--color-juomapeliteksti: #482219;
-		--color-neverteksti: #1c3144;
-		--color-never: #06d6a0;
-		--color-neverkakkonen: #b0f1e0;
-		--color-tekstit: #494949;
-		--color-taustasininen: #cde8f1;
-		--color-taustapunanen: #ffe7ed;
-		--color-taustakeltanen: #fcffd6;
-	}
-</style>

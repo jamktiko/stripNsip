@@ -3,35 +3,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 
-<main class="bg-gradient-to-br from-taustakeltanen via-taustasininen  to-taustapunanen p-10">
+<main class="bg-gradient-to-br from-taustakeltanen via-taustasininen ï¿½to-taustapunanen p-10">
 <div class="grid grid-cols-3 justify-center">
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30">
-    <div class="pt-9 font-josefin text-2xl">Pehmeitä paljastuksia</div>
-    <span class="material-symbols-outlined md-75"> favorite </span>
-  </button>
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30">
-    <div class="px-2 pt-9 font-josefin text-2xl">Kippis ja kulaus</div>
-    <span class="material-symbols-outlined md-75"> sports_bar </span>
-  </button>
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30">
-    <div class="pt-9 font-josefin text-2xl">Onko tullut kokeiltua?</div>
-    <span class="material-symbols-outlined md-75"> Balance </span>
-  </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30">
+ï¿½ ï¿½ <div class="pt-9 font-josefin text-2xl">Pehmeitï¿½ paljastuksia</div>
+ï¿½ ï¿½ <span class="material-symbols-outlined md-75"> favorite </span>
+ï¿½ </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30">
+ï¿½ ï¿½ <div class="px-2 pt-9 font-josefin text-2xl">Kippis ja kulaus</div>
+ï¿½ ï¿½ <span class="material-symbols-outlined md-75"> sports_bar </span>
+ï¿½ </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30">
+ï¿½ ï¿½ <div class="pt-9 font-josefin text-2xl">Onko tullut kokeiltua?</div>
+ï¿½ ï¿½ <span class="material-symbols-outlined md-75"> Balance </span>
+ï¿½ </button>
 </div>
 
 <div class="grid grid-cols-3 justify-center">
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit  shadow-xl/30">
-  <span class="material-symbols-outlined md-50 pt-5 text-parisuhde opacity-50"> favorite </span>
-    <p class="pt-9 font-josefin text-2xl">Pehmeitä paljastuksia</p>
-  </button>
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juompelikakkonen text-juomapeliteksti shadow-xl/30">
-  <span class="material-symbols-outlined md-50 pt-5 opacity-50"> sports_bar </span>
-    <p class="px-2 font-josefin text-2xl">jee kivaa</p>
-  </button>
-  <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-neverkakkonen text-neverteksti shadow-xl/30">
-  <span class="material-symbols-outlined pt-5 md-50 opacity-50"> Balance </span>
-    <p class="font-josefin text-2xl">tähän kysmys</p>
-  </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit ï¿½shadow-xl/30">
+ï¿½ <span class="material-symbols-outlined md-50 pt-5 text-parisuhde opacity-50"> favorite </span>
+ï¿½ ï¿½ <p class="pt-9 font-josefin text-2xl">Pehmeitï¿½ paljastuksia</p>
+ï¿½ </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juompelikakkonen text-juomapeliteksti shadow-xl/30">
+ï¿½ <span class="material-symbols-outlined md-50 pt-5 opacity-50"> sports_bar </span>
+ï¿½ ï¿½ <p class="px-2 font-josefin text-2xl">jee kivaa</p>
+ï¿½ </button>
+ï¿½ <button class="bg-jamkpinkki m-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-neverkakkonen text-neverteksti shadow-xl/30">
+ï¿½ <span class="material-symbols-outlined pt-5 md-50 opacity-50"> Balance </span>
+ï¿½ ï¿½ <p class="font-josefin text-2xl">tï¿½hï¿½n kysmys</p>
+ï¿½ </button>
 </div>
 </main>
 
@@ -51,79 +51,84 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @theme {
-  /* ... */
+ï¿½ /* ... */
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 24
+ï¿½ font-variation-settings:
+ï¿½ 'FILL' 1,
+ï¿½ 'wght' 200,
+ï¿½ 'GRAD' 0,
+ï¿½ 'opsz' 24
 }
 
 
 .md-75 {
-  font-size: 100px !important;
+ï¿½ font-size: 100px !important;
 }
 
 .md-50 {
-  font-size: 60px !important;
+ï¿½ font-size: 60px !important;
 }
 
 @theme {
-  --font-josefin: "Josefin Sans", sans-serif; 
-  --color-parisuhde: #EF476F;
-  --color-parisuhdeteksti: #FFE4EF;
-  --color-juomapeli: #FFD166;
-  --color-juompelikakkonen: #FFEAB9;
-  --color-juomapeliteksti: #482219;
-  --color-neverteksti: #1C3144;
-  --color-never: #06D6A0;
-  --color-neverkakkonen: #B0F1E0;
-  --color-tekstit: #494949;
-  --color-taustasininen: #CDE8F1;
-  --color-taustapunanen: #FFE7ED;
-  --color-taustakeltanen: #FCFFD6;
+ï¿½ --font-josefin: "Josefin Sans", sans-serif; 
+ï¿½ --color-parisuhde: #EF476F;
+ï¿½ --color-parisuhdeteksti: #FFE4EF;
+ï¿½ --color-juomapeli: #FFD166;
+ï¿½ --color-juompelikakkonen: #FFEAB9;
+ï¿½ --color-juomapeliteksti: #482219;
+ï¿½ --color-neverteksti: #1C3144;
+ï¿½ --color-never: #06D6A0;
+ï¿½ --color-neverkakkonen: #B0F1E0;
+ï¿½ --color-tekstit: #494949;
+ï¿½ --color-taustasininen: #CDE8F1;
+ï¿½ --color-taustapunanen: #FFE7ED;
+ï¿½ --color-taustakeltanen: #FCFFD6;
 }
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @theme {
-  /* ... */
+ï¿½ /* ... */
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 24
+ï¿½ font-variation-settings:
+ï¿½ 'FILL' 1,
+ï¿½ 'wght' 200,
+ï¿½ 'GRAD' 0,
+ï¿½ 'opsz' 24
 }
 
 
 .md-75 {
-  font-size: 100px !important;
+ï¿½ font-size: 100px !important;
 }
 
 .md-50 {
-  font-size: 60px !important;
+ï¿½ font-size: 60px !important;
 }
 
 @theme {
-  --font-josefin: "Josefin Sans", sans-serif; 
-  --color-parisuhde: #EF476F;
-  --color-parisuhdeteksti: #FFE4EF;
-  --color-juomapeli: #FFD166;
-  --color-juompelikakkonen: #FFEAB9;
-  --color-juomapeliteksti: #482219;
-  --color-neverteksti: #1C3144;
-  --color-never: #06D6A0;
-  --color-neverkakkonen: #B0F1E0;
-  --color-tekstit: #494949;
-  --color-taustasininen: #CDE8F1;
-  --color-taustapunanen: #FFE7ED;
-  --color-taustakeltanen: #FCFFD6;
+ï¿½ --font-josefin: "Josefin Sans", sans-serif; 
+ï¿½ --color-parisuhde: #EF476F;
+ï¿½ --color-parisuhdeteksti: #FFE4EF;
+ï¿½ --color-juomapeli: #FFD166;
+ï¿½ --color-juompelikakkonen: #FFEAB9;
+ï¿½ --color-juomapeliteksti: #482219;
+ï¿½ --color-neverteksti: #1C3144;
+ï¿½ --color-never: #06D6A0;
+ï¿½ --color-neverkakkonen: #B0F1E0;
+ï¿½ --color-tekstit: #494949;
+ï¿½ --color-taustasininen: #CDE8F1;
+ï¿½ --color-taustapunanen: #FFE7ED;
+ï¿½ --color-taustakeltanen: #FCFFD6;
 }
 
 
 Samulin: https://play.tailwindcss.com/gpR1Bu5arg
+
+PÃ¤ivitetty yhden kortin sivu: https://play.tailwindcss.com/P8osEpDosh
+pop-up: https://play.tailwindcss.com/lJdad4A2RC
+pÃ¤ivitetty aloitussivu uudelle divillÃ¤ ja vÃ¤reillÃ¤: https://play.tailwindcss.com/HoXfmX4yXC
+korttien kysymyspuolet: https://play.tailwindcss.com/ELHr65sBtG

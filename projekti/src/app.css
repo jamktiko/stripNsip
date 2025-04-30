@@ -1,3 +1,19 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-josefin: 'Josefin Sans', sans-serif;
+	--color-parisuhde: #ef476f;
+	--color-parisuhdeteksti: #ffe4ef;
+	--color-juomapeli: #ffd166;
+	--color-juompelikakkonen: #ffeab9;
+	--color-juomapeliteksti: #482219;
+	--color-neverteksti: #1c3144;
+	--color-never: #06d6a0;
+	--color-neverkakkonen: #b0f1e0;
+	--color-tekstit: #494949;
+	--color-taustasininen: #cde8f1;
+	--color-taustapunanen: #ffe7ed;
+	--color-taustakeltanen: #fcffd6;
+}
