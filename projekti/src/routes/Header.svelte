@@ -12,7 +12,7 @@
   <img src={logo} alt="Strip 'n Sip logo" />
 
   {#if otsikkoNaytetaan}
-  <h1>{otsikko}</h1>
+  <h1 class="font-josefin">{otsikko}</h1>
   {/if}
 
   <HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
@@ -24,7 +24,7 @@
     <HeaderButton text="?" disabled={true} />
     <h1>Strip 'n Sip</h1>
   {/snippet}
-  <p>Tähän tekstiä</p>
+  <p class="font-josefin">Tähän tekstiä</p>
   {#snippet footer()}
     <h2>Tekijät</h2>
     <p>Ryhmä Rämä</p>
