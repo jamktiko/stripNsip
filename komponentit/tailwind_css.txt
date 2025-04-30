@@ -126,8 +126,6 @@
 }
 
 
-Samulin: https://play.tailwindcss.com/gpR1Bu5arg
-
 Päivitetty yhden kortin sivu: https://play.tailwindcss.com/P8osEpDosh
 pop-up: https://play.tailwindcss.com/lJdad4A2RC
 päivitetty aloitussivu uudelle divillä ja väreillä: https://play.tailwindcss.com/HoXfmX4yXC
