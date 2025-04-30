@@ -17,7 +17,7 @@
 
 <!-- animaatiot modal diville -->
 <!-- transition:fly={{ y: -300, delay: 50, duration: 500 }} -->
-<div class="modal">
+<div class=" modal bg-slate-100 flex flex-col items-center p-5 m-10 rounded-xl">
 	<header>
 		{@render header?.()}
 	</header>
@@ -48,9 +48,8 @@
 		left: 10vw;
 		width: 80%;
 		max-height: 80vh;
-		background: white;
 		border-radius: 5px;
 		z-index: 100;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-	}
+	} 
 </style>
