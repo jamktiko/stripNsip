@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Header from "./Header.svelte";
+	import Header from './Header.svelte';
 
 	import Kortti from './Kortti.svelte';
 	let pakka1Nimi = $state('parisuhdepeli');
