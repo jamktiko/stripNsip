@@ -2,7 +2,10 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	// Importit ennen tätä----- Muuttujat tämän jälkeen
+
 	let kaikkiKysymykset: Kysymykset[] = $state([]);
+
 	onMount(async () => {
 		const response = await fetch('/data/kysymykset.json');
 		if (!response.ok) {
