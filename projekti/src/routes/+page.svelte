@@ -1,31 +1,35 @@
 <script lang="ts">
-	import Header from './Header.svelte';
-
 	import Kortti from './Kortti.svelte';
-	let pakka1Nimi = $state('parisuhdepeli');
-	let pakka2Nimi = $state('Juoma');
-	let pakka3Nimi = $state('NeverhaveIever');
+	let pakka1Nimi = $state('Pehmeitä paljastuksia');
+	let pakka2Nimi = $state('Kippis ja kulaus');
+	let pakka3Nimi = $state('Onko tullut kokeiltua?');
 	let pakka1TailWind = $state(
-		'bg-parisuhde min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30'
 	);
 	let pakka2TailWind = $state(
-		'bg-red-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30'
 	);
 	let pakka3TailWind = $state(
-		'bg-green-500 min-h-65 max-w-50 min-w-50 bg-parisuhde text-parisuhdeteksti shadow-xl/30 m-10 grid max-h-80 rounded-xl border-8 border-white '
+		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30'
 	);
+
+	let pakka1Logo = $state('material-symbols-outlined md-75');
+	let pakka2Logo = $state('material-symbols-outlined md-75');
+	let pakka3Logo = $state('material-symbols-outlined md-75');
+
 	function klikkaus() {
 		console.log('toimii vieläkin');
 	}
 </script>
 
-<Header otsikko="Mitä peliä haluat pelata?" logo="logo.png" />
-
 <main>
 	<div>
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi}></Kortti>
-		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi}></Kortti>
-		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi}></Kortti>
+		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} ikoni={pakka1Logo}
+		></Kortti>
+		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} ikoni={pakka2Logo}
+		></Kortti>
+		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} ikoni={pakka3Logo}
+		></Kortti>
 	</div>
 </main>

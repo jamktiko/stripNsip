@@ -1,19 +1,32 @@
 <script lang="ts">
+	import HeaderButton from "./HeaderButton.svelte";
+	import Popup from "./Popup.svelte";
+
   let { otsikko, logo }: { otsikko: string; logo: string } = $props();
+  // pitää muokata myöhemmin miten otsikkoNaytetaan arvo määräytyy
+  let otsikkoNaytetaan = true;
+  let popupIkkunaNaytetaan = $state(false);
 </script>
 
 <header>
-  <img src={logo} alt="Strip 'n sip logo" />
+  <img src={logo} alt="Strip 'n Sip logo" />
 
+  {#if otsikkoNaytetaan}
   <h1>{otsikko}</h1>
+  {/if}
 
-  <!-- myöhemmin button-komponentti -->
-  <button>?</button>
+  <HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
 </header>
 
-<style>
-  /* väliaikainen tyylimääritys */
-  button {
-    border: 1px solid black;
-  }
-</style>
+<Popup {popupIkkunaNaytetaan}>
+  {#snippet header()}
+    <HeaderButton text="x" onclick={() => popupIkkunaNaytetaan = false} />
+    <HeaderButton text="?" disabled={true} />
+    <h1>Strip 'n Sip</h1>
+  {/snippet}
+  <p>Tähän tekstiä</p>
+  {#snippet footer()}
+    <h2>Tekijät</h2>
+    <p>Ryhmä Rämä</p>
+  {/snippet}
+</Popup>

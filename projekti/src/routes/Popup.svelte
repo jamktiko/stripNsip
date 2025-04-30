@@ -4,15 +4,15 @@
 		header?: Snippet;
 		children: Snippet;
 		footer?: Snippet;
-    PopupIkkunaNäytetään: boolean
+    popupIkkunaNaytetaan: boolean
 	}
 
-	let { header, children, footer, PopupIkkunaNäytetään }: Props = $props();
+	let { header, children, footer, popupIkkunaNaytetaan }: Props = $props();
 
 	// import { fly } from 'svelte/transition';
 </script>
 
-{#if PopupIkkunaNäytetään}
+{#if popupIkkunaNaytetaan}
 <div class="backdrop"></div>
 
 <!-- animaatiot modal diville -->
