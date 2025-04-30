@@ -1,5 +1,19 @@
 <script lang="ts">
+	import type { Kysymykset } from '$lib/kysymykset';
+	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	// Importit ennen tätä----- Muuttujat tämän jälkeen
+
+	let kaikkiKysymykset: Kysymykset[] = $state([]);
+
+	onMount(async () => {
+		const response = await fetch('/data/kysymykset.json');
+		if (!response.ok) {
+			throw new Error('cannot fetch the data');
+		}
+		kaikkiKysymykset = await response.json();
+	});
+	$inspect(kaikkiKysymykset);
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
 	let pakka2Nimi = $state('Kippis ja kulaus');
 	let pakka3Nimi = $state('Onko tullut kokeiltua?');
