@@ -2,6 +2,7 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	// import { NUMBER_OF_PROCESSORS } from '$env/static/private';
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
 	let kaikkiKysymykset: Kysymykset[] = $state([]);
@@ -14,6 +15,8 @@
 		kaikkiKysymykset = await response.json();
 	});
 	$inspect(kaikkiKysymykset);
+	let valitutKysymykset: Kysymykset[] = $state([]);
+	function korttiPakanValinta() {}
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
 	let pakka2Nimi = $state('Kippis ja kulaus');
 	let pakka3Nimi = $state('Onko tullut kokeiltua?');
@@ -33,6 +36,10 @@
 
 	function klikkaus() {
 		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter(
+			(kysymys) => kysymys.genre === 'PehmeitäPaljastuksia'
+		);
+		console.log(valitutKysymykset);
 	}
 </script>
 
