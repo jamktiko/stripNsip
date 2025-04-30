@@ -1,9 +1,4 @@
 <script lang="ts">
-<<<<<<< HEAD
-=======
-	import Header from "./Header.svelte";
-	import logo1 from "../../static/favorite.png"
->>>>>>> refs/remotes/origin/develop
 	import Kortti from './Kortti.svelte';
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
 	let pakka2Nimi = $state('Kippis ja kulaus');
