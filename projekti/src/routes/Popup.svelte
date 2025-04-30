@@ -17,12 +17,14 @@
 
 <!-- animaatiot modal diville -->
 <!-- transition:fly={{ y: -300, delay: 50, duration: 500 }} -->
-<div class=" modal bg-slate-100 flex flex-col items-center p-5 m-10 rounded-xl">
+<div class=" modal bg-slate-100 font-josefin text-tekstit flex flex-col  p-5 m-10 rounded-xl">
 	<header>
 		{@render header?.()}
 	</header>
 
-	{@render children()}
+	
+		{@render children()}
+	
 
 	<footer>
 		{@render footer?.()}
