@@ -12,7 +12,7 @@
   <img src={logo} alt="Strip 'n Sip logo" />
 
   {#if otsikkoNaytetaan}
-  <h1 class="font-josefin">{otsikko}</h1>
+  <h1 class="font-josefin text-tekstit text-3xl">{otsikko}</h1>
   {/if}
 
   <HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
