@@ -34,11 +34,21 @@
 	let pakka2Logo = $state('material-symbols-outlined md-75');
 	let pakka3Logo = $state('material-symbols-outlined md-75');
 
-	function klikkaus() {
+	function klikkaus1() {
 		console.log('toimii vieläkin');
 		valitutKysymykset = kaikkiKysymykset.filter(
 			(kysymys) => kysymys.genre === 'PehmeitäPaljastuksia'
 		);
+		console.log(valitutKysymykset);
+	}
+	function klikkaus2() {
+		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'KippisJaKulaus');
+		console.log(valitutKysymykset);
+	}
+	function klikkaus3() {
+		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
 		console.log(valitutKysymykset);
 	}
 </script>
@@ -46,11 +56,11 @@
 <main>
 	<div>
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} ikoni={pakka1Logo}
+		<Kortti className={pakka1TailWind} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
 		></Kortti>
-		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} ikoni={pakka2Logo}
+		<Kortti className={pakka2TailWind} onclick={klikkaus2} text={pakka2Nimi} ikoni={pakka2Logo}
 		></Kortti>
-		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} ikoni={pakka3Logo}
+		<Kortti className={pakka3TailWind} onclick={klikkaus3} text={pakka3Nimi} ikoni={pakka3Logo}
 		></Kortti>
 	</div>
 </main>
