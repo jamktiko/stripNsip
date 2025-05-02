@@ -34,22 +34,30 @@
 	let pakka2Logo = $state('material-symbols-outlined md-75');
 	let pakka3Logo = $state('material-symbols-outlined md-75');
 
+	let kysymys = $state('');
+	let valittuPakka = $state(0);
 	function klikkaus1() {
 		console.log('toimii vieläkin');
 		valitutKysymykset = kaikkiKysymykset.filter(
 			(kysymys) => kysymys.genre === 'PehmeitäPaljastuksia'
 		);
+		valittuPakka = 1;
 		console.log(valitutKysymykset);
+		console.log(valittuPakka);
 	}
 	function klikkaus2() {
 		console.log('toimii vieläkin');
 		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'KippisJaKulaus');
+		valittuPakka = 2;
 		console.log(valitutKysymykset);
+		console.log(valittuPakka);
 	}
 	function klikkaus3() {
 		console.log('toimii vieläkin');
 		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
+		valittuPakka = 3;
 		console.log(valitutKysymykset);
+		console.log(valittuPakka);
 	}
 </script>
 
