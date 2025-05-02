@@ -61,6 +61,7 @@
 	}
 </script>
 
+
 <main>
 	<div>
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
@@ -72,3 +73,4 @@
 		></Kortti>
 	</div>
 </main>
+
