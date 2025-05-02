@@ -17,7 +17,7 @@
 
 <!-- animaatiot modal diville -->
 <!-- transition:fly={{ y: -300, delay: 50, duration: 500 }} -->
-<div class=" modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10">
+<div class=" modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10 overflow-y-auto">
 	<header>
 		{@render header?.()}
 	</header>
