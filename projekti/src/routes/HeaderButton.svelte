@@ -8,7 +8,7 @@
 	let { text, onclick, disabled = false }: Props = $props();
 </script>
 
-<button {onclick} {disabled}>{text}</button>
+<button class="text-4xl bg-tekstit py-1 px-4 rounded-full text-white"{onclick} {disabled}>{text}</button>
 
 <style>
   /* button {

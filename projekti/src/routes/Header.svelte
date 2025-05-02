@@ -12,7 +12,7 @@
   <img src={logo} alt="Strip 'n Sip logo" />
 
   {#if otsikkoNaytetaan}
-  <h1 class="font-josefin">{otsikko}</h1>
+  <h1 class="font-josefin text-tekstit text-3xl">{otsikko}</h1>
   {/if}
 
   <HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
@@ -20,12 +20,18 @@
 
 <Popup {popupIkkunaNaytetaan}>
   {#snippet header()}
-    <HeaderButton text="x" onclick={() => popupIkkunaNaytetaan = false} />
-    <HeaderButton text="?" disabled={true} />
-    <img src="https://api.mtvuutiset.fi/graphql/caas/v1/media/5236266/data/78bad80a8e026613bc09d64c8941749c/landscape16_9/1600/korttipakka.jpg" alt="terve">
-    <h1 class="text-center p-2 text-xl">Strip 'n Sip</h1>
+  <div class=" flex justify-between">
+    <div class="order-1"></div>
+     <div class="order-2 pl-5">
+      <img src="./pics/help.png" alt="Ohje" class="max-w-20 min-w-20 max-w-20 min-v-20"/>
+     </div>
+    <div class="order-3"><HeaderButton text="x" onclick={() => popupIkkunaNaytetaan = false}/></div>
+  </div>
   {/snippet}
-  <p class="text-center p-2">Tämä peli sopii erilaisiin tilanteisiin, joissa halutaan viettää aikaa yhdessä rennosti ja hauskasti. Pariskunta-kategoria tarjoaa syvällisiä keskusteluja, juomapeli tuo mukaan rohkeampia kysymyksiä ja tehtäviä ystävien iltaan, ja Never have I ever -pakka toimii kevyenä tutustumisleikkinä. Pelaaminen on yksinkertaista: valitse korttipakka, napauta sitä ja vastaa esitettyyn kysymykseen tai suorita annettu tehtävä yhdessä.</p>
+  <div>
+    <h1 class="text-center p-2 text-xl">Strip 'n Sip</h1>
+  </div>
+  <p class="text-center py-2 px-35">Tämä peli sopii erilaisiin tilanteisiin, joissa halutaan viettää aikaa yhdessä rennosti ja hauskasti. Pariskunta-kategoria tarjoaa syvällisiä keskusteluja, juomapeli tuo mukaan rohkeampia kysymyksiä ja tehtäviä ystävien iltaan, ja Never have I ever -pakka toimii kevyenä tutustumisleikkinä. Pelaaminen on yksinkertaista: valitse korttipakka, napauta sitä ja vastaa esitettyyn kysymykseen tai suorita annettu tehtävä yhdessä.</p>
   {#snippet footer()}
     <h2 class="text-center pb-2 pt-5 text-xl">Tekijät</h2>
     <p class=" text-center p-2">Jeremia Vepsäläinen, Sanni Pöykiö, Aino Seppi, Samuli Ilomäki</p>
