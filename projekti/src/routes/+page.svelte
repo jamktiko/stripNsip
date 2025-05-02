@@ -2,6 +2,7 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	// import { NUMBER_OF_PROCESSORS } from '$env/static/private';
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
 	let kaikkiKysymykset: Kysymykset[] = $state([]);
@@ -14,6 +15,8 @@
 		kaikkiKysymykset = await response.json();
 	});
 	$inspect(kaikkiKysymykset);
+	let valitutKysymykset: Kysymykset[] = $state([]);
+	function korttiPakanValinta() {}
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
 	let pakka2Nimi = $state('Kippis ja kulaus');
 	let pakka3Nimi = $state('Onko tullut kokeiltua?');
@@ -31,19 +34,41 @@
 	let pakka2Logo = $state('material-symbols-outlined md-75');
 	let pakka3Logo = $state('material-symbols-outlined md-75');
 
-	function klikkaus() {
+	let kysymys = $state('');
+	let valittuPakka = $state(0);
+	function klikkaus1() {
 		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter(
+			(kysymys) => kysymys.genre === 'PehmeitäPaljastuksia'
+		);
+		valittuPakka = 1;
+		console.log(valitutKysymykset);
+		console.log(valittuPakka);
+	}
+	function klikkaus2() {
+		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'KippisJaKulaus');
+		valittuPakka = 2;
+		console.log(valitutKysymykset);
+		console.log(valittuPakka);
+	}
+	function klikkaus3() {
+		console.log('toimii vieläkin');
+		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
+		valittuPakka = 3;
+		console.log(valitutKysymykset);
+		console.log(valittuPakka);
 	}
 </script>
 
 <main>
 	<div>
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti className={pakka1TailWind} onclick={klikkaus} text={pakka1Nimi} ikoni={pakka1Logo}
+		<Kortti className={pakka1TailWind} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
 		></Kortti>
-		<Kortti className={pakka2TailWind} onclick={klikkaus} text={pakka2Nimi} ikoni={pakka2Logo}
+		<Kortti className={pakka2TailWind} onclick={klikkaus2} text={pakka2Nimi} ikoni={pakka2Logo}
 		></Kortti>
-		<Kortti className={pakka3TailWind} onclick={klikkaus} text={pakka3Nimi} ikoni={pakka3Logo}
+		<Kortti className={pakka3TailWind} onclick={klikkaus3} text={pakka3Nimi} ikoni={pakka3Logo}
 		></Kortti>
 	</div>
 </main>
