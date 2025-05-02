@@ -6,6 +6,6 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<Header otsikko="Mitä peliä haluat pelata?" logo="logo.png" />
+<Header otsikko="Mitä peliä haluat pelata?" logo="./pics/logo.svg" />
 
 {@render children()}
