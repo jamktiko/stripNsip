@@ -8,14 +8,17 @@
   let popupIkkunaNaytetaan = $state(false);
 </script>
 
-<header>
-  <img src={logo} alt="Strip 'n Sip logo" />
+<header class=" px-20 grid place content-evenly grid-cols-2 gap-4">
+  <img  class=" py-5 w-45 h-45" src={logo} alt="Strip 'n Sip logo" />
 
-  {#if otsikkoNaytetaan}
-  <h1 class="font-josefin text-tekstit text-3xl">{otsikko}</h1>
-  {/if}
+  <div class=" grid items-center justify-end"><HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
 
-  <HeaderButton text="?" onclick={() => popupIkkunaNaytetaan = true} />
+  </div>
+  
+    {#if otsikkoNaytetaan}
+    <h1 class=" font-josefin  text-tekstit text-4xl sm:text-5xl col-span-2 flex items-center justify-center text-center ">{otsikko}</h1>
+    {/if}
+  
 </header>
 
 <Popup {popupIkkunaNaytetaan}>
