@@ -23,7 +23,7 @@
   <div class=" flex justify-between">
     <div class="order-1"></div>
      <div class="order-2 pl-5">
-      <img src="/help.png" alt="Ohje" class="max-w-20 min-w-20 max-w-20 min-v-20"/>
+      <img src="./pics/help.png" alt="Ohje" class="max-w-20 min-w-20 max-w-20 min-v-20"/>
      </div>
     <div class="order-3"><HeaderButton text="x" onclick={() => popupIkkunaNaytetaan = false}/></div>
   </div>
