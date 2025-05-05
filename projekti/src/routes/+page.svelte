@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
+	import PelausSivu from './pelausSivu.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -22,7 +23,8 @@
 		{
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
-			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
+			etupuoliTW:
+				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
@@ -32,7 +34,8 @@
 		{
 			id: 2,
 			nimi: 'Kippis ja kulaus',
-			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
+			etupuoliTW:
+				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
@@ -42,7 +45,8 @@
 		{
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
-			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
+			etupuoliTW:
+				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
 			img: '/pics/have.svg',
 			alt: 'vaaka',
@@ -52,7 +56,6 @@
 	];
 	//vanha koodi ennen objektitaulukkoa
 	let valitutKysymykset: Kysymykset[] = $state([]);
-	function korttiPakanValinta() {}
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
 	let pakka2Nimi = $state('Kippis ja kulaus');
 	let pakka3Nimi = $state('Onko tullut kokeiltua?');
@@ -74,41 +77,61 @@
 	let valittuPakka = $state(0);
 	function klikkaus1() {
 		console.log('toimii vieläkin');
-		valitutKysymykset = kaikkiKysymykset.filter(
-			(kysymys) => kysymys.genre === 'PehmeitäPaljastuksia'
-		);
+		valitutKysymykset = kaikkiKysymykset
+			.filter((kysymys) => kysymys.genre === 'PehmeitäPaljastuksia')
+			.sort(() => Math.random() - 0.5) // sekottaa pakan
+			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 		valittuPakka = 1;
 		console.log(valitutKysymykset);
 		console.log(valittuPakka);
 	}
-	function klikkaus2() {
-		console.log('toimii vieläkin');
+
+	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
-			.filter((kysymys) => kysymys.genre === 'KippisJaKulaus')
+			.filter((kysymys) => kysymys.genre === 'PehmeitäPaljastuksia')
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
-			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä
-		valittuPakka = 2;
-		console.log(valitutKysymykset);
-		console.log(valittuPakka);
+			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 	}
-	function klikkaus3() {
-		console.log('toimii vieläkin');
-		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
-		valittuPakka = 3;
-		console.log(valitutKysymykset);
-		console.log(valittuPakka);
-	}
+	// function klikkaus2() {
+	// 	console.log('toimii vieläkin');
+	// 	valitutKysymykset = kaikkiKysymykset
+	// 		.filter((kysymys) => kysymys.genre === 'KippisJaKulaus')
+	// 		.sort(() => Math.random() - 0.5) // sekottaa pakan
+	// 		.slice(0, 15); // ottaa 15 ensimmäistä kysymystä
+	// 	valittuPakka = 2;
+	// 	console.log(valitutKysymykset);
+	// 	console.log(valittuPakka);
+	// }
+	// function klikkaus3() {
+	// 	console.log('toimii vieläkin');
+	// 	valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
+	// 	valittuPakka = 3;
+	// 	console.log(valitutKysymykset);
+	// 	console.log(valittuPakka);
+	// }
 </script>
 
 <main>
 	<div>
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti className={korttiPakat[0].nimi} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
+		<Kortti
+			className={korttiPakat[0].nimi}
+			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
+			text={pakka1Nimi}
+			ikoni={pakka1Logo}
 		></Kortti>
-		<Kortti className={pakka2TailWind} onclick={klikkaus2} text={pakka2Nimi} ikoni={pakka2Logo}
+		<Kortti
+			className={pakka2TailWind}
+			onclick={() => korttiPakanValinta(korttiPakat[1].id)}
+			text={pakka2Nimi}
+			ikoni={pakka2Logo}
 		></Kortti>
-		<Kortti className={pakka3TailWind} onclick={klikkaus3} text={pakka3Nimi} ikoni={pakka3Logo}
+		<Kortti
+			className={pakka3TailWind}
+			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
+			text={pakka3Nimi}
+			ikoni={pakka3Logo}
 		></Kortti>
 	</div>
 </main>
