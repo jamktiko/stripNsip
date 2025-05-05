@@ -92,4 +92,6 @@
 			ikoni={korttiPakat[2].img}
 		></Kortti>
 	</div>
+
+	<div></div>
 </main>
