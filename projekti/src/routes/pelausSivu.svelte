@@ -1,5 +1,16 @@
 <script lang="ts">
   import Kortti from './Kortti.svelte';
+  interface Props {
+		text: string;
+		className?: string;
+		ikoni: string;
+    valitutKysymykset: string[]
+	}
+	let { text, className , ikoni, valitutKysymykset }: Props = $props();
+
+  function flippaa() {
+		flipped = !flipped;
+	}
 </script>
 
 <main>

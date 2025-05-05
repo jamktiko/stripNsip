@@ -23,7 +23,7 @@
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW: 'etupuolen tw',
 			takapuoliTW: 'takapuolen tw',
-			img: '/pics/favorite.svg',
+			img: '/pics/favorite1.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-15 max-w-15'
