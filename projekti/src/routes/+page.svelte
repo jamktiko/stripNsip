@@ -17,7 +17,17 @@
 	$inspect(kaikkiKysymykset);
 
 	//objektiTaulukko
-	let korttiPakat: object[] = [
+	interface KorttiPakka {
+		id: number;
+		nimi: string;
+		etupuoliTW: string;
+		takapuoliTW: string;
+		img: string;
+		alt: string;
+		imgTWEtupuoli: string;
+		imgTWTakapuoli: string;
+	}
+	let korttiPakat: KorttiPakka[] = [
 		{
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
@@ -103,7 +113,7 @@
 	<div>
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti className={pakka1TailWind} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
+		<Kortti className={korttiPakat[0].nimi} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
 		></Kortti>
 		<Kortti className={pakka2TailWind} onclick={klikkaus2} text={pakka2Nimi} ikoni={pakka2Logo}
 		></Kortti>
