@@ -25,7 +25,7 @@
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
-			takapuoliTW: 'takapuolen tw',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30 opacity-50',
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -36,7 +36,7 @@
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
-			takapuoliTW: 'takapuolen tw',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30 opacity-50',
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -47,7 +47,7 @@
 			nimi: 'Onko tullut kokeiltua',
 			etupuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
-			takapuoliTW: 'takapuolen tw',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30 opacity-50',
 			img: '/pics/have.svg',
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
