@@ -1,8 +1,9 @@
 <script lang="ts">
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
-	import Kortti from './Kortti.svelte';
+	// import Kortti from './Kortti.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
+	import PeliNavigaatio from './PeliNavigaatio.svelte';
 	// import PelausSivu from './pelausSivu.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
@@ -71,9 +72,10 @@
 
 <main>
 	<div>
+		<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<Kortti
+		<!-- <Kortti
 			className={korttiPakat[0].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
 			text={korttiPakat[0].nimi}
@@ -90,6 +92,6 @@
 			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
 			text={korttiPakat[2].nimi}
 			ikoni={korttiPakat[2].img}
-		></Kortti>
+		></Kortti> -->
 	</div>
 </main>
