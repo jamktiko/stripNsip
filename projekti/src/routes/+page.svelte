@@ -30,9 +30,9 @@
 		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30'
 	);
 
-	let pakka1Logo = $state('/pics/favorite.svg');
-	let pakka2Logo = $state('/pics/sports_bar.svg');
-	let pakka3Logo = $state('/pics/balance.svg');
+	let pakka1Logo = $state('/pics/favorite1.svg');
+	let pakka2Logo = $state('/pics/juoma.svg');
+	let pakka3Logo = $state('/pics/have.svg');
 
 	let kysymys = $state('');
 	let valittuPakka = $state(0);
