@@ -11,7 +11,7 @@
 
 <button {onclick} class={className}>
 	<div class="pt-9 font-josefin text-2xl">{text}</div>
-	<span class={ikoni}>  </span></button
+	<span class="grid pr-1 justify-items-center"><img src={ikoni} class="max-w-20 min-w-20 max-w-20"> </span> </button
 >
 
 <style>
