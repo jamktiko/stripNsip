@@ -2,6 +2,8 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	import type { KorttiPakka } from '$lib/korttiPakka';
+
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
 	let kaikkiKysymykset: Kysymykset[] = $state([]);
@@ -16,46 +18,36 @@
 	$inspect(kaikkiKysymykset);
 
 	//objektiTaulukko
-	interface KorttiPakka {
-		id: number;
-		nimi: string;
-		etupuoliTW: string;
-		takapuoliTW: string;
-		img: string;
-		alt: string;
-		imgTWEtupuoli: string;
-		imgTWTakapuoli: string;
-	}
 	let korttiPakat: KorttiPakka[] = [
 		{
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
-			etupuoliTW: 'etupuolen tw',
+			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
-			imgTWEtupuoli: 'min-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-15 max-w-15'
+			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
 		},
 		{
 			id: 2,
 			nimi: 'Kippis ja kulaus',
-			etupuoliTW: 'etupuolen tw',
+			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
-			img: '/pics/?.svg',
+			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
-			imgTWEtupuoli: 'min-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-15 max-w-15'
+			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
 		},
 		{
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
-			etupuoliTW: 'etupuolen tw',
+			etupuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
 			takapuoliTW: 'takapuolen tw',
-			img: '/pics/?.svg',
+			img: '/pics/have.svg',
 			alt: 'vaaka',
-			imgTWEtupuoli: 'min-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-15 max-w-15'
+			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
 		}
 	];
 	//vanha koodi ennen objektitaulukkoa
