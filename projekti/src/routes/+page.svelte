@@ -30,7 +30,7 @@
 		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30'
 	);
 
-	let pakka1Logo = $state('material-symbols-outlined md-75');
+	let pakka1Logo = $state('/pics/favorite.svg');
 	let pakka2Logo = $state('material-symbols-outlined md-75');
 	let pakka3Logo = $state('material-symbols-outlined md-75');
 
