@@ -2,6 +2,7 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	import type { KorttiPakka } from '$lib/korttiPakka';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -17,16 +18,6 @@
 	$inspect(kaikkiKysymykset);
 
 	//objektiTaulukko
-	interface KorttiPakka {
-		id: number;
-		nimi: string;
-		etupuoliTW: string;
-		takapuoliTW: string;
-		img: string;
-		alt: string;
-		imgTWEtupuoli: string;
-		imgTWTakapuoli: string;
-	}
 	let korttiPakat: KorttiPakka[] = [
 		{
 			id: 1,
