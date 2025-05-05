@@ -16,7 +16,7 @@
   </div>
   
     {#if otsikkoNaytetaan}
-    <h1 class=" font-josefin  text-tekstit text-4xl sm:text-5xl col-span-2 flex items-center justify-center text-center ">{otsikko}</h1>
+    <h1 class=" font-josefin  text-tekstit text-3xl sm:text-4xl col-span-2 flex items-center justify-center text-center ">{otsikko}</h1>
     {/if}
   
 </header>
