@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
-	import PelausSivu from './pelausSivu.svelte';
+	// import PelausSivu from './pelausSivu.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -64,6 +64,8 @@
 			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 		console.log(valitutKysymykset);
 		console.log(korttiPakat[valinta - 1].nimi);
+		//puuttuu näkyvyystilan vaihto
+		//valitun kortin propsien vieminen pelisivulle
 	}
 </script>
 
