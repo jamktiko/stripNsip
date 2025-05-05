@@ -34,7 +34,7 @@
   <div>
     <h1 class="text-center pb-2 pt-8 text-2xl">Strip 'n Sip</h1>
   </div>
-  <p class="text-center py-2 px-5 sm:px-30 text-xl">Tämä peli sopii erilaisiin tilanteisiin, joissa halutaan viettää aikaa yhdessä rennosti ja hauskasti. Pariskunta-kategoria tarjoaa syvällisiä keskusteluja, juomapeli tuo mukaan rohkeampia kysymyksiä ja tehtäviä ystävien iltaan, ja Never have I ever -pakka toimii kevyenä tutustumisleikkinä. Pelaaminen on yksinkertaista: valitse korttipakka, napauta sitä ja vastaa esitettyyn kysymykseen tai suorita annettu tehtävä yhdessä.</p>
+  <p class="text-center py-2 px-5 sm:px-30 text-xl">Tämä peli pistää porukan puhumaan, paljastamaan ja nauramaan – joskus jopa yllättymään. Pehmeitä paljastuksia -kategoria kutsuu syvällisiin keskusteluihin, Kippis ja kulaus esittää ronskimpia kysymyksiä ja tehtäviä illanviettoon. Onko tullut kokeiltua? toimii puolestaan hauskana jäänmurtajana uusien tuttavuuksien kanssa. Pelaaminen on helppoa: valitse korttipakka, napauta, ja vastaa kysymykseen tai tee tehtävä – yksin tai yhdessä.</p>
   {#snippet footer()}
     <h2 class="text-center pb-2 pt-5 text-2xl">Tekijät</h2>
     <p class=" text-center py-2 pb-8 text-xl">Jeremia Vepsäläinen, Sanni Pöykiö, Aino Seppi, Samuli Ilomäki</p>
