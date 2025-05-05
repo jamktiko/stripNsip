@@ -31,8 +31,8 @@
 	);
 
 	let pakka1Logo = $state('/pics/favorite.svg');
-	let pakka2Logo = $state('material-symbols-outlined md-75');
-	let pakka3Logo = $state('material-symbols-outlined md-75');
+	let pakka2Logo = $state('/pics/sports_bar.svg');
+	let pakka3Logo = $state('/pics/balance.svg');
 
 	let kysymys = $state('');
 	let valittuPakka = $state(0);

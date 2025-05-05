@@ -11,7 +11,7 @@
 
 <button {onclick} class={className}>
 	<div class="pt-9 font-josefin text-2xl">{text}</div>
-	<img src={ikoni}>  </button
+	<span><img src={ikoni}></span>  </button
 >
 
 <style>
