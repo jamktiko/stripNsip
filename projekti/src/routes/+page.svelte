@@ -78,7 +78,7 @@
 	function klikkaus1() {
 		console.log('toimii vieläkin');
 		valitutKysymykset = kaikkiKysymykset
-			.filter((kysymys) => kysymys.genre === 'PehmeitäPaljastuksia')
+			.filter((kysymys) => kysymys.genre === 1)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
 			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 		valittuPakka = 1;
@@ -88,7 +88,7 @@
 
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
-			.filter((kysymys) => kysymys.genre === 'PehmeitäPaljastuksia')
+			.filter((kysymys) => kysymys.genre === valinta)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
 			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 	}
@@ -116,22 +116,22 @@
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
 		<Kortti
-			className={korttiPakat[0].nimi}
+			className={korttiPakat[0].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
-			text={pakka1Nimi}
-			ikoni={pakka1Logo}
+			text={korttiPakat[0].nimi}
+			ikoni={korttiPakat[0].img}
 		></Kortti>
 		<Kortti
-			className={pakka2TailWind}
+			className={korttiPakat[1].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[1].id)}
-			text={pakka2Nimi}
-			ikoni={pakka2Logo}
+			text={korttiPakat[1].nimi}
+			ikoni={korttiPakat[1].img}
 		></Kortti>
 		<Kortti
-			className={pakka3TailWind}
+			className={korttiPakat[2].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
-			text={pakka3Nimi}
-			ikoni={pakka3Logo}
+			text={korttiPakat[2].nimi}
+			ikoni={korttiPakat[2].img}
 		></Kortti>
 	</div>
 </main>
