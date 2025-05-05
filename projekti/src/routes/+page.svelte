@@ -56,59 +56,15 @@
 	];
 	//vanha koodi ennen objektitaulukkoa
 	let valitutKysymykset: Kysymykset[] = $state([]);
-	let pakka1Nimi = $state('Pehmeitä paljastuksia');
-	let pakka2Nimi = $state('Kippis ja kulaus');
-	let pakka3Nimi = $state('Onko tullut kokeiltua?');
-	let pakka1TailWind = $state(
-		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30'
-	);
-	let pakka2TailWind = $state(
-		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30'
-	);
-	let pakka3TailWind = $state(
-		'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30'
-	);
-
-	let pakka1Logo = $state('/pics/favorite1.svg');
-	let pakka2Logo = $state('/pics/juoma.svg');
-	let pakka3Logo = $state('/pics/have.svg');
-
-	let kysymys = $state('');
-	let valittuPakka = $state(0);
-	function klikkaus1() {
-		console.log('toimii vieläkin');
-		valitutKysymykset = kaikkiKysymykset
-			.filter((kysymys) => kysymys.genre === 1)
-			.sort(() => Math.random() - 0.5) // sekottaa pakan
-			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
-		valittuPakka = 1;
-		console.log(valitutKysymykset);
-		console.log(valittuPakka);
-	}
 
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
 			.filter((kysymys) => kysymys.genre === valinta)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
 			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
+		console.log(valitutKysymykset);
+		console.log(korttiPakat[valinta - 1].nimi);
 	}
-	// function klikkaus2() {
-	// 	console.log('toimii vieläkin');
-	// 	valitutKysymykset = kaikkiKysymykset
-	// 		.filter((kysymys) => kysymys.genre === 'KippisJaKulaus')
-	// 		.sort(() => Math.random() - 0.5) // sekottaa pakan
-	// 		.slice(0, 15); // ottaa 15 ensimmäistä kysymystä
-	// 	valittuPakka = 2;
-	// 	console.log(valitutKysymykset);
-	// 	console.log(valittuPakka);
-	// }
-	// function klikkaus3() {
-	// 	console.log('toimii vieläkin');
-	// 	valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'OletkoKoskaan');
-	// 	valittuPakka = 3;
-	// 	console.log(valitutKysymykset);
-	// 	console.log(valittuPakka);
-	// }
 </script>
 
 <main>
