@@ -2,7 +2,7 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
-	// import { NUMBER_OF_PROCESSORS } from '$env/static/private';
+
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
 	let kaikkiKysymykset: Kysymykset[] = $state([]);
@@ -15,6 +15,41 @@
 		kaikkiKysymykset = await response.json();
 	});
 	$inspect(kaikkiKysymykset);
+
+	//objektiTaulukko
+	let korttiPakat: object[] = [
+		{
+			id: 1,
+			nimi: 'Pehmeitä paljastuksia',
+			etupuoliTW: 'etupuolen tw',
+			takapuoliTW: 'takapuolen tw',
+			img: '/pics/favorite.svg',
+			alt: 'sydän',
+			imgTWEtupuoli: 'min-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-15 max-w-15'
+		},
+		{
+			id: 2,
+			nimi: 'Kippis ja kulaus',
+			etupuoliTW: 'etupuolen tw',
+			takapuoliTW: 'takapuolen tw',
+			img: '/pics/?.svg',
+			alt: 'tuoppi',
+			imgTWEtupuoli: 'min-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-15 max-w-15'
+		},
+		{
+			id: 3,
+			nimi: 'Onko tullut kokeiltua',
+			etupuoliTW: 'etupuolen tw',
+			takapuoliTW: 'takapuolen tw',
+			img: '/pics/?.svg',
+			alt: 'vaaka',
+			imgTWEtupuoli: 'min-w-20 max-w-20',
+			imgTWTakapuoli: 'min-w-15 max-w-15'
+		}
+	];
+	//vanha koodi ennen objektitaulukkoa
 	let valitutKysymykset: Kysymykset[] = $state([]);
 	function korttiPakanValinta() {}
 	let pakka1Nimi = $state('Pehmeitä paljastuksia');
@@ -47,7 +82,10 @@
 	}
 	function klikkaus2() {
 		console.log('toimii vieläkin');
-		valitutKysymykset = kaikkiKysymykset.filter((kysymys) => kysymys.genre === 'KippisJaKulaus');
+		valitutKysymykset = kaikkiKysymykset
+			.filter((kysymys) => kysymys.genre === 'KippisJaKulaus')
+			.sort(() => Math.random() - 0.5) // sekottaa pakan
+			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä
 		valittuPakka = 2;
 		console.log(valitutKysymykset);
 		console.log(valittuPakka);
@@ -61,9 +99,9 @@
 	}
 </script>
 
-
 <main>
 	<div>
+		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
 		<Kortti className={pakka1TailWind} onclick={klikkaus1} text={pakka1Nimi} ikoni={pakka1Logo}
 		></Kortti>
@@ -73,4 +111,3 @@
 		></Kortti>
 	</div>
 </main>
-
