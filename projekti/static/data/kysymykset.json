@@ -2,301 +2,361 @@
 	{
 		"id": 1,
 		"question": "Mikä on lempimuistosi yhdessä viettämästämme ajasta?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 2,
 		"question": "Mikä on yksi asia, jota arvostat minussa eniten?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 3,
 		"question": "Mikä on unelmasi, jonka haluaisit toteuttaa yhdessä?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 4,
 		"question": "Mikä on paras tapa, jolla voin osoittaa rakkauttani sinulle?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 5,
 		"question": "Mikä on ollut haastavin hetki suhteessamme, ja miten selvisimme siitä?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 6,
 		"question": "Mikä on yksi asia, jonka haluaisit minun tietävän sinusta paremmin?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 7,
 		"question": "Mikä on suosikkipiirteesi suhteessamme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 8,
 		"question": "Mikä on paras tapa viettää yhteistä aikaa mielestäsi?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 9,
 		"question": "Mikä on suurin toiveesi tulevaisuudellemme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 10,
 		"question": "Mikä on ollut ikimuistoisin lahja, jonka olet saanut minulta?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 11,
 		"question": "Mikä on yksi asia, jonka haluaisit tehdä kanssani, mutta emme ole vielä tehneet?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 12,
 		"question": "Mikä on paras tapa, jolla voimme vahvistaa suhdettamme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 13,
 		"question": "Mikä on yksi asia, joka saa sinut tuntemaan olosi rakastetuksi?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 14,
 		"question": "Mikä on ollut hauskin hetki, jonka olemme kokeneet yhdessä?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 15,
 		"question": "Mikä on yksi asia, jota haluaisit parantaa suhteessamme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 16,
 		"question": "Mikä on tärkein oppitunti, jonka olet oppinut suhteestamme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 17,
 		"question": "Mikä on suosikkitapasi viettää aikaa kanssani?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 18,
 		"question": "Mikä on yksi asia, joka tekee sinut onnelliseksi suhteessamme?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 19,
 		"question": "Mikä on suurin unelmasi meille kahdelle?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 20,
 		"question": "Mikä on yksi asia, jonka haluaisit minun muistavan aina?",
-		"genre": "PehmeitäPaljastuksia"
+		"genrenNimi": "PehmeitäPaljastuksia",
+		"genre": 1
 	},
 	{
 		"id": 21,
 		"question": "Kaikki kenellä on päällä T-paita, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 22,
 		"question": "Kaikki, jotka ovat syntyneet kesällä, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 23,
 		"question": "Kaikki, joilla on siniset silmät, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 24,
 		"question": "Kaikki, jotka ovat käyttäneet aurinkolaseja tänään, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 25,
 		"question": "Kaikki, jotka ovat matkustaneet ulkomaille viimeisen vuoden aikana, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 26,
 		"question": "Kaikki, jotka omistavat lemmikin, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 27,
 		"question": "Kaikki, jotka ovat pukeutuneet mustaan, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 28,
 		"question": "Kaikki, jotka ovat myöhästyneet viimeisen viikon aikana, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 29,
 		"question": "Kaikki, jotka osaavat soittaa jotain instrumenttia, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 30,
 		"question": "Kaikki, jotka ovat olleet hereillä yli 18 tuntia, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 31,
 		"question": "Kaikki, jotka ovat katsoneet elokuvan viimeisen viikon aikana, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 32,
 		"question": "Kaikki, jotka ovat käyttäneet julkista liikennettä tänään, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 33,
 		"question": "Kaikki, jotka ovat syöneet pizzaa viimeisen viikon aikana, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 34,
 		"question": "Kaikki, jotka osaavat puhua kahta tai useampaa kieltä, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 35,
 		"question": "Kaikki, jotka ovat käyneet kuntosalilla viimeisen viikon aikana, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 36,
 		"question": "Kaikki, jotka ovat käyttäneet hattua tänään, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 37,
 		"question": "Kaikki, jotka ovat olleet lomalla viimeisen kuukauden aikana, juovat shotin",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 38,
 		"question": "Kaikki, jotka ovat juoneet kahvia tänään, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 39,
 		"question": "Kaikki, jotka ovat käyttäneet farkkuja tänään, juovat kaksi huikkaa",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 40,
 		"question": "Kaikki, jotka ovat käyneet suihkussa tänään, juovat yhden huikan",
-		"genre": "KippisJaKulaus"
+		"genrenNimi": "KippisJaKulaus",
+		"genre": 2
 	},
 	{
 		"id": 41,
 		"question": "Oletko koskaan ollut käsiraudoissa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 42,
 		"question": "Oletko koskaan unohtanut jonkun tärkeän syntymäpäivän",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 43,
 		"question": "Oletko koskaan valehdellut saadaksesi itsesi pois pulasta",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 44,
 		"question": "Oletko koskaan syönyt jotain, joka oli pudonnut lattialle",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 45,
 		"question": "Oletko koskaan matkustanut yksin ulkomaille",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 46,
 		"question": "Oletko koskaan rikkonut vahingossa jotain arvokasta",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 47,
 		"question": "Oletko koskaan ollut myöhässä tärkeästä tapaamisesta",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 48,
 		"question": "Oletko koskaan unohtanut maksaa laskua ajoissa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 49,
 		"question": "Oletko koskaan eksynyt vieraassa kaupungissa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 50,
 		"question": "Oletko koskaan ollut mukana jossain, mitä kadut",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 51,
 		"question": "Oletko koskaan syönyt jotain, mitä et tiennyt mitä se oli",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 52,
 		"question": "Oletko koskaan ollut lentokoneessa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 53,
 		"question": "Oletko koskaan unohtanut jonkun nimen heti esittelyn jälkeen",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 54,
 		"question": "Oletko koskaan ollut yöllä yksin metsässä",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 55,
 		"question": "Oletko koskaan tehnyt jotain spontaania, joka muutti elämäsi",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 56,
 		"question": "Oletko koskaan ollut TV:ssä tai radiossa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 57,
 		"question": "Oletko koskaan unohtanut avaimiasi kotiin",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 58,
 		"question": "Oletko koskaan ollut mukana onnettomuudessa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 59,
 		"question": "Oletko koskaan nauranut niin paljon, että aloit itkeä",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	},
 	{
 		"id": 60,
 		"question": "Oletko koskaan unohtanut jotain tärkeää tapahtumaa",
-		"genre": "OletkoKoskaan"
+		"genrenNimi": "OletkoKoskaan",
+		"genre": 3
 	}
 ]
