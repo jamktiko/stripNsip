@@ -25,9 +25,8 @@
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
-			takapuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30 opacity-50',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit shadow-xl/30',
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -37,9 +36,8 @@
 			id: 2,
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
-			takapuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30 opacity-50',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juompelikakkonen text-juomapeliteksti shadow-xl/30',
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -49,9 +47,8 @@
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
-			takapuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30 opacity-50',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-neverkakkonen text-neverteksti shadow-xl/30',
 			img: '/pics/have.svg',
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
