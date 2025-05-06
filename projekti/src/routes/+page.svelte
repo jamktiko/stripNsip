@@ -2,6 +2,7 @@
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
 	import Kortti from './Kortti.svelte';
+	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	// import PelausSivu from './pelausSivu.svelte';
 
@@ -93,5 +94,12 @@
 		></Kortti>
 	</div>
 
-	<div></div>
+	<div>
+		<PelausSivu
+			className={korttiPakat[0].etupuoliTW}
+			text={korttiPakat[0].nimi}
+			ikoni={korttiPakat[0].img}
+			taulukko={valitutKysymykset}
+		></PelausSivu>
+	</div>
 </main>

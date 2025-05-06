@@ -1,12 +1,14 @@
 <script lang="ts">
+	import type { Kysymykset } from '$lib/kysymykset';
 	import Kortti from './Kortti.svelte';
 	interface Props {
 		text: string;
 		className?: string;
 		ikoni: string;
-		valitutKysymykset: string[];
+		taulukko?: Kysymykset[];
+		// onclick: () => void;
 	}
-	let { text, className, ikoni, valitutKysymykset }: Props = $props();
+	let { text, className, ikoni, taulukko }: Props = $props();
 	let flipped = $state(false);
 	function flippaa() {
 		className = `${flipped ? 'flipped ' : ''}${className || ''}`;
