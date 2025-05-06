@@ -22,11 +22,13 @@
 
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
-		<div class="font-josefin pt-12 text-2xl lg:text-3xl pl-5 pr-5">{text}</div>
-		<span class="grid justify-items-center"
-			><img src={ikoni} class="absolute top-30 right-15 lg:absolute lg:top-30 lg:right-17 2xl:absolute 2xl:top-30 2xl:right-20 min-w-25 max-w-25 lg:min-w-30 lg:max-w-30 2xl:min-w-35 2xl:max-w-35 pt-10
+		<div class="grid grid-cols-1 justify-items-center">
+		<div class="absolute top-1/2   -translate-y-1/2 font-josefin text-2xl lg:text-3xl pl-5 pr-5">{text}</div>
+		<span class="justify-items-center"
+			><img src={ikoni} class="absolute right-21 lg:absolute  lg:right-25 2xl:absolute 2xl:right-29 min-w-13 max-w-13 lg:min-w-15 lg:max-w-15 2xl:min-w-18 2xl:max-w-18 pt-7
 		2" />
 		</span>
+		</div>
 	</div>
 	<div class="back}">
 		<div></div>
