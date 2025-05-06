@@ -25,9 +25,14 @@
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW:
+<<<<<<< HEAD
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
 			takapuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30 opacity-50',
+=======
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30 opacity-50',
+>>>>>>> develop
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -37,9 +42,14 @@
 			id: 2,
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
+<<<<<<< HEAD
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
 			takapuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30 opacity-50',
+=======
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30 opacity-50',
+>>>>>>> develop
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
@@ -49,9 +59,14 @@
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
 			etupuoliTW:
+<<<<<<< HEAD
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
 			takapuoliTW:
 				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30 opacity-50',
+=======
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
+			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30 opacity-50',
+>>>>>>> develop
 			img: '/pics/have.svg',
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
