@@ -31,7 +31,8 @@
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
+			asettelu: 'sm:justify-self-end'
 		},
 		{
 			id: 2,
@@ -42,7 +43,8 @@
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
+			asettelu: 'sm:justify-items-center'
 		},
 		{
 			id: 3,
@@ -53,7 +55,8 @@
 			img: '/pics/have.svg',
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
-			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20'
+			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
+			asettelu: 'sm:justify-self-start'
 		}
 	];
 	//vanha koodi ennen objektitaulukkoa
@@ -78,35 +81,8 @@
 <main>
 	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 		{#if olaanEtusivulla}
-			<div class=" sm:justify-self-end">
-				<!-- Kortit näkyviin eachilla -->
-				<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-				<Kortti
-					className={korttiPakat[0].etupuoliTW}
-					onclick={() => korttiPakanValinta(korttiPakat[0].id)}
-					text={korttiPakat[0].nimi}
-					ikoni={korttiPakat[0].img}
-				></Kortti>
-			</div>
-			<div class=" sm:justify-items-center">
-				<Kortti
-					className={korttiPakat[1].etupuoliTW}
-					onclick={() => korttiPakanValinta(korttiPakat[1].id)}
-					text={korttiPakat[1].nimi}
-					ikoni={korttiPakat[1].img}
-				></Kortti>
-			</div>
-			<div class="sm:justify-self-start">
-				<Kortti
-					className={korttiPakat[2].etupuoliTW}
-					onclick={() => korttiPakanValinta(korttiPakat[2].id)}
-					text={korttiPakat[2].nimi}
-					ikoni={korttiPakat[2].img}
-				></Kortti>
-			</div>
-		{/if}
-
-		{#if ollaanPelisivulla}
+			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
+		{:else if ollaanPelisivulla}
 			<div class=" sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[0].etupuoliTW}

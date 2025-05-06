@@ -7,4 +7,5 @@ export interface KorttiPakka {
 	alt: string;
 	imgTWEtupuoli: string;
 	imgTWTakapuoli: string;
+	asettelu: string;
 }
