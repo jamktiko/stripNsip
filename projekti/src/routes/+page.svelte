@@ -77,8 +77,8 @@
 </script>
 
 <main>
-	{#if olaanEtusivulla}
-		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
+	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
+		{#if olaanEtusivulla}
 			<div class=" sm:justify-self-end">
 				<!-- Kortit näkyviin eachilla -->
 				<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
@@ -105,16 +105,17 @@
 					ikoni={korttiPakat[2].img}
 				></Kortti>
 			</div>
-		</div>
-	{/if}
-	{#if ollaanPelisivulla}
-		<div>
-			<PelausSivu
-				className={korttiPakat[0].etupuoliTW}
-				text={korttiPakat[0].nimi}
-				ikoni={korttiPakat[0].img}
-				taulukko={valitutKysymykset}
-			></PelausSivu>
-		</div>
-	{/if}
+		{/if}
+
+		{#if ollaanPelisivulla}
+			<div class=" sm:justify-items-center">
+				<PelausSivu
+					className={korttiPakat[0].etupuoliTW}
+					text={korttiPakat[0].nimi}
+					ikoni={korttiPakat[0].img}
+					taulukko={valitutKysymykset}
+				></PelausSivu>
+			</div>
+		{/if}
+	</div>
 </main>
