@@ -13,9 +13,3 @@
 	{onclick}
 	{disabled}>{text}</button
 >
-
-<style>
-	/* button {
-    border: 3px solid black;
-  } */
-</style>
