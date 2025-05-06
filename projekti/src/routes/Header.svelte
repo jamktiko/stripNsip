@@ -17,7 +17,7 @@
 
 	{#if otsikkoNaytetaan}
 		<h1
-			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center text-center text-3xl sm:text-4xl"
+			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center text-center text-3xl md:text-4xl"
 		>
 			{otsikko}
 		</h1>

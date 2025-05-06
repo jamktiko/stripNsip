@@ -24,7 +24,7 @@
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
 			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30 opacity-50',
 			img: '/pics/favorite1.svg',
 			alt: 'sydän',
@@ -35,7 +35,7 @@
 			id: 2,
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
 			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30 opacity-50',
 			img: '/pics/juoma.svg',
 			alt: 'tuoppi',
@@ -46,7 +46,7 @@
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
 			etupuoliTW:
-				'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
+				'm-10 grid max-h-80 min-h-80 max-w-60 min-w-60 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
 			takapuoliTW: 'm-10 grid max-h-80 min-h-65 max-w-50 min-w-50 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30 opacity-50',
 			img: '/pics/have.svg',
 			alt: 'vaaka',
@@ -70,10 +70,10 @@
 </script>
 
 <main>
-	<div class="grid px-5 sm:grid-cols-3 sm:px-10 justify-items-center">
+	<div class="grid px-5 md:grid-cols-3 sm:px-10 justify-items-center">
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-	<div class=" sm:justify-self-end">
+	<div class=" md:justify-self-end">
 		<Kortti
 			className={korttiPakat[0].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
@@ -81,7 +81,7 @@
 			ikoni={korttiPakat[0].img}
 		></Kortti>
 	</div>
-	<div class=" sm:justify-items-center">
+	<div class=" md:justify-items-center">
 		<Kortti
 			className={korttiPakat[1].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[1].id)}
@@ -89,7 +89,7 @@
 			ikoni={korttiPakat[1].img}
 		></Kortti>
 	</div>
-	<div class="sm:justify-self-start">
+	<div class="md:justify-self-start">
 		<Kortti
 			className={korttiPakat[2].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
