@@ -75,23 +75,5 @@
 		<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
-		<!-- <Kortti
-			className={korttiPakat[0].etupuoliTW}
-			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
-			text={korttiPakat[0].nimi}
-			ikoni={korttiPakat[0].img}
-		></Kortti>
-		<Kortti
-			className={korttiPakat[1].etupuoliTW}
-			onclick={() => korttiPakanValinta(korttiPakat[1].id)}
-			text={korttiPakat[1].nimi}
-			ikoni={korttiPakat[1].img}
-		></Kortti>
-		<Kortti
-			className={korttiPakat[2].etupuoliTW}
-			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
-			text={korttiPakat[2].nimi}
-			ikoni={korttiPakat[2].img}
-		></Kortti> -->
 	</div>
 </main>
