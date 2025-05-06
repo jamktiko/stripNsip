@@ -5,7 +5,7 @@
 		onclick: () => void;
 		className?: string;
 		id?: number;
-		ikoni: string;
+		ikoni?: string;
 		flippaus?: boolean;
 		takapuoliTW?: string;
 	}

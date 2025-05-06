@@ -116,7 +116,7 @@
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
 					text={korttiPakat[valittu].nimi}
-					ikoni={korttiPakat[valittu].img}
+					
 					taulukko={valitutKysymykset}
 				></PelausSivu>
 				<div
