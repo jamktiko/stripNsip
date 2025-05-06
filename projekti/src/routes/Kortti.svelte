@@ -19,6 +19,7 @@
 	}: Props = $props();
 </script>
 
+
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
 		<div class="font-josefin pt-9 text-2xl">{text}</div>
