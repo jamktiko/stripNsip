@@ -70,26 +70,32 @@
 </script>
 
 <main>
-	<div>
+	<div class="grid px-5 sm:grid-cols-3 sm:px-10 justify-items-center">
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
+	<div class=" sm:justify-self-end">
 		<Kortti
 			className={korttiPakat[0].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[0].id)}
 			text={korttiPakat[0].nimi}
 			ikoni={korttiPakat[0].img}
 		></Kortti>
+	</div>
+	<div class=" sm:justify-items-center">
 		<Kortti
 			className={korttiPakat[1].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[1].id)}
 			text={korttiPakat[1].nimi}
 			ikoni={korttiPakat[1].img}
 		></Kortti>
+	</div>
+	<div class="sm:justify-self-start">
 		<Kortti
 			className={korttiPakat[2].etupuoliTW}
 			onclick={() => korttiPakanValinta(korttiPakat[2].id)}
 			text={korttiPakat[2].nimi}
 			ikoni={korttiPakat[2].img}
 		></Kortti>
+	</div>
 	</div>
 </main>
