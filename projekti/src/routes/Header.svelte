@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HeaderButton from './HeaderButton.svelte';
+	import Button from './Button.svelte';
 	import Popup from './Popup.svelte';
 
 	let { otsikko, logo }: { otsikko: string; logo: string } = $props();
@@ -12,12 +12,21 @@
 	<img class=" w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
 
 	<div class=" grid items-center justify-end">
-		<HeaderButton text="?" onclick={() => (popupIkkunaNaytetaan = true)} />
+		<!-- <Button 
+		text="?" 
+		onclick={() => (popupIkkunaNaytetaan = true)} 
+		tyyli={'text-3xl sm:text-4xl hover:shadow-xl border-4 border-tekstit cursor-pointer hover:bg-tekstit py-1 px-4 rounded-full text-tekstit hover:text-white'} 
+		/> -->
+		<Button
+			text="?"
+			onclick={() => (popupIkkunaNaytetaan = true)}
+			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
+		/>
 	</div>
 
 	{#if otsikkoNaytetaan}
 		<h1
-			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center text-center text-3xl md:text-4xl"
+			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-4xl"
 		>
 			{otsikko}
 		</h1>
@@ -29,10 +38,14 @@
 		<div class=" flex justify-between">
 			<div class="order-1"></div>
 			<div class="pl-13 order-2">
-				<img src="./pics/help.png" alt="Ohje" class="min-v-20 min-w-20 max-w-20 max-w-20" />
+				<img src="./pics/help.png" alt="Ohje" class="min-v-20 min-w-20 max-w-20" />
 			</div>
 			<div class="order-3">
-				<HeaderButton text="x" onclick={() => (popupIkkunaNaytetaan = false)} />
+				<Button
+					text="x"
+					onclick={() => (popupIkkunaNaytetaan = false)}
+					tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
+				/>
 			</div>
 		</div>
 	{/snippet}

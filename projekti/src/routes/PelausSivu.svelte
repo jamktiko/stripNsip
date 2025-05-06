@@ -6,7 +6,7 @@
 	interface Props {
 		text: string;
 		className?: string;
-		ikoni: string;
+		ikoni?: string;
 		taulukko?: Kysymykset[];
 		takapuoliTW: string;
 		// onclick: () => void;
