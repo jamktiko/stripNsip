@@ -62,6 +62,7 @@
 	let valitutKysymykset: Kysymykset[] = $state([]);
 	let ollaanPelisivulla = $state(false);
 	let olaanEtusivulla = $state(true);
+	let valittu = $state(0);
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
 			.filter((kysymys) => kysymys.genre === valinta)
@@ -71,6 +72,7 @@
 		console.log(korttiPakat[valinta - 1].nimi);
 		olaanEtusivulla = false;
 		ollaanPelisivulla = true;
+		valittu = valinta - 1;
 		//puuttuu näkyvyystilan vaihto
 		//valitun kortin propsien vieminen pelisivulle
 	}
@@ -111,10 +113,10 @@
 		{#if ollaanPelisivulla}
 			<div class=" sm:justify-items-center">
 				<PelausSivu
-					className={korttiPakat[0].etupuoliTW}
-					takapuoliTW={korttiPakat[0].takapuoliTW}
-					text={korttiPakat[0].nimi}
-					ikoni={korttiPakat[0].img}
+					className={korttiPakat[valittu].etupuoliTW}
+					takapuoliTW={korttiPakat[valittu].takapuoliTW}
+					text={korttiPakat[valittu].nimi}
+					ikoni={korttiPakat[valittu].img}
 					taulukko={valitutKysymykset}
 				></PelausSivu>
 				<div
