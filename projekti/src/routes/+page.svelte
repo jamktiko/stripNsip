@@ -25,7 +25,7 @@
 			id: 1,
 			nimi: 'Pehmeitä paljastuksia',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 transition delay-160 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit shadow-xl/30',
 			img: '/pics/favorite2.svg',
@@ -38,7 +38,7 @@
 			id: 2,
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl/30',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl hover:shadow-xl/50 transition delay-160 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juompelikakkonen text-juomapeliteksti shadow-xl/30',
 			img: '/pics/juoma.svg',
@@ -51,7 +51,7 @@
 			id: 3,
 			nimi: 'Onko tullut kokeiltua',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl/30',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl hover:shadow-xl/50 transition delay-160 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-neverkakkonen text-neverteksti shadow-xl/30',
 			img: '/pics/have.svg',
@@ -95,12 +95,6 @@
 					
 					taulukko={valitutKysymykset}
 				></PelausSivu>
-				<div
-					class="bg-tekstit font-josefin max-w-30 min-w-30 hover:shadow-xl/40 flex max-h-10 min-h-10 place-content-center rounded-xl py-2 text-white"
-				>
-					<span class="material-symbols-outlined md-20"> arrow_back_ios </span>
-					<div>Takaisin</div>
-				</div>
 			</div>
 		{/if}
 	</div>

@@ -8,6 +8,7 @@
 		ikoni?: string;
 		flippaus?: boolean;
 		takapuoliTW?: string;
+		alt?: string;
 	}
 	let {
 		text,
@@ -15,19 +16,25 @@
 		className,
 		ikoni,
 		flippaus = $bindable(),
-		takapuoliTW = $bindable()
+		takapuoliTW = $bindable(),
+		alt
 	}: Props = $props();
 </script>
-
 
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
 		<div class="grid grid-cols-1 justify-items-center">
-		<div class="absolute top-1/2   -translate-y-1/2 font-josefin text-2xl lg:text-3xl pl-5 pr-5">{text}</div>
-		<span class="justify-items-center"
-			><img src={ikoni} class="absolute right-21 lg:absolute  lg:right-25 2xl:absolute 2xl:right-29 min-w-13 max-w-13 lg:min-w-15 lg:max-w-15 2xl:min-w-18 2xl:max-w-18 pt-7
-		2" />
-		</span>
+			<div class="font-josefin absolute top-1/2 -translate-y-1/2 pl-5 pr-5 text-2xl lg:text-3xl">
+				{text}
+			</div>
+			<span class="justify-items-center"
+				><img
+					src={ikoni}
+					{alt}
+					class="right-21 lg:right-25 2xl:right-29 min-w-13 max-w-13 lg:min-w-15 lg:max-w-15 2xl:min-w-18 2xl:max-w-18 2 absolute pt-7 lg:absolute
+		2xl:absolute"
+				/>
+			</span>
 		</div>
 	</div>
 	<div class="back}">
