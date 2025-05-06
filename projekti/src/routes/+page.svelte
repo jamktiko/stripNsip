@@ -88,7 +88,7 @@
 		{#if olaanEtusivulla}
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		{:else if ollaanPelisivulla}
-			<div class=" sm:justify-items-center">
+			<div class=" sm:justify-items-center col-start-2">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
