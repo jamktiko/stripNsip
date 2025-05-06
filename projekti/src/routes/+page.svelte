@@ -29,7 +29,7 @@
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl/30',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit shadow-xl/30',
-			img: '/pics/favorite1.svg',
+			img: '/pics/favorite2.svg',
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
