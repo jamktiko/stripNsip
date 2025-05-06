@@ -74,6 +74,7 @@
 		//puuttuu näkyvyystilan vaihto
 		//valitun kortin propsien vieminen pelisivulle
 	}
+	$inspect(valitutKysymykset);
 </script>
 
 <main>
@@ -111,10 +112,17 @@
 			<div class=" sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[0].etupuoliTW}
+					takapuoliTW={korttiPakat[0].takapuoliTW}
 					text={korttiPakat[0].nimi}
 					ikoni={korttiPakat[0].img}
 					taulukko={valitutKysymykset}
 				></PelausSivu>
+				<div
+					class="bg-tekstit font-josefin max-w-30 min-w-30 hover:shadow-xl/40 flex max-h-10 min-h-10 place-content-center rounded-xl py-2 text-white"
+				>
+					<span class="material-symbols-outlined md-20"> arrow_back_ios </span>
+					<div>Takaisin</div>
+				</div>
 			</div>
 		{/if}
 	</div>
