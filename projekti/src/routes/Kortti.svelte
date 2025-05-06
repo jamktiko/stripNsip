@@ -5,7 +5,7 @@
 		onclick: () => void;
 		className?: string;
 		id?: number;
-		ikoni: string;
+		ikoni?: string;
 		flippaus?: boolean;
 		takapuoliTW?: string;
 	}
@@ -22,9 +22,10 @@
 
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
-		<div class="font-josefin pt-9 text-2xl">{text}</div>
-		<span class="grid justify-items-center pr-1"
-			><img src={ikoni} class="min-w-20 max-w-20 max-w-20" />
+		<div class="font-josefin pt-12 text-2xl lg:text-3xl pl-5 pr-5">{text}</div>
+		<span class="grid justify-items-center"
+			><img src={ikoni} class="absolute top-30 right-15 lg:absolute lg:top-30 lg:right-17 2xl:absolute 2xl:top-30 2xl:right-20 min-w-25 max-w-25 lg:min-w-30 lg:max-w-30 2xl:min-w-35 2xl:max-w-35 pt-10
+		2" />
 		</span>
 	</div>
 	<div class="back}">
