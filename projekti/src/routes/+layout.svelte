@@ -1,19 +1,15 @@
-
- <script lang="ts">
+<script lang="ts">
 	import '../app.css';
-	import Header from "./Header.svelte";
-	// import PeliNavigaatio from './PeliNavigaatio.svelte';
+	import Header from './Header.svelte';
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
 </script>
-<div class="relative min-h-screen inset-0 -z-10 bg-gradient-to-br from-taustakeltanen via-taustasininen  to-taustapunanen">
 
-<Header otsikko="Mitä peliä haluat pelata?" logo="./pics/logo.svg" />
+<div
+	class="from-taustakeltanen via-taustasininen to-taustapunanen inset-0 -z-10 min-h-screen bg-gradient-to-br"
+>
+	<Header otsikko="Mitä peliä haluat pelata?" logo="./pics/logo.svg" />
 
-<!-- <PeliNavigaatio /> -->
-
-{@render children()}
-
-
+	{@render children()}
 </div>
