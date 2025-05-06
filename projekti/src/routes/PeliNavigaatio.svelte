@@ -12,7 +12,7 @@
 </script>
 
 {#if ollaanEtusivulla}
-  <!-- <div> -->
+  <div>
     {#each korttiPakat as pakka}
 		<Kortti 
 			className={pakka.etupuoliTW} 
@@ -20,7 +20,7 @@
 			text={pakka.nimi}
 			ikoni={pakka.img} />
 		{/each}
-  <!-- </div> -->
+  </div>
 {:else}
   <!-- tähän pelaussivu? -->
 {/if}

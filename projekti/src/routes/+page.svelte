@@ -68,13 +68,15 @@
 		//puuttuu näkyvyystilan vaihto
 		//valitun kortin propsien vieminen pelisivulle
 	}
+
+	let korttienSijoittelu = [];
 </script>
 
 <main>
-		<!-- <PeliNavigaatio {korttiPakat} {korttiPakanValinta} /> -->
 	<div class="grid px-5 md:grid-cols-3 sm:px-10 justify-items-center">
 		<!-- Kortit näkyviin eachilla -->
 		<!-- Tee hidden elementillä diviin  if lause jolla piilotetaan kaksi muuta-->
+		<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 	<div class=" md:justify-self-end">
 		<Kortti
 			className={korttiPakat[0].etupuoliTW}
