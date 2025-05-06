@@ -1,7 +1,6 @@
-
- <script lang="ts">
+<script lang="ts">
 	import '../app.css';
-	import Header from "./Header.svelte";
+	import Header from './Header.svelte';
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
@@ -11,7 +10,5 @@
 <Header otsikko="Mitä peliä haluat pelata?" logo="./pics/logo.svg" />
 
 
-{@render children()}
-
-
+	{@render children()}
 </div>
