@@ -8,12 +8,16 @@
 		taulukko?: Kysymykset[];
 		// onclick: () => void;
 	}
+
 	let { text, className, ikoni, taulukko }: Props = $props();
 	let flipped = $state(false);
+	let kysymyksenNumero = $state(0);
 	function flippaa() {
-		className = `${flipped ? 'flipped ' : ''}${className || ''}`;
+		// className = `${flipped ? 'flipped ' : ''}${className || ''}`;
+		text = taulukko[kysymyksenNumero].question;
+		kysymyksenNumero++;
 	}
-	$inspect(className);
+	$inspect(text);
 </script>
 
 <main>
