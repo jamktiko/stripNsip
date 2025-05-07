@@ -63,32 +63,15 @@
 	}
 	.card {
 		position: relative;
-		/* aspect-ratio: 2.5 / 3.5;
-		font-size: min(1vh, 0.25rem); */
-		/* height: 400em;
-		background: var(--bg-1);
-		border-radius: 2em; */
+
 		transform: rotateY(180deg);
 		transition: transform 0.7s;
 		transform-style: preserve-3d;
-		/* padding: 0;
-		user-select: none; */
+
 		cursor: pointer;
 	}
 	.front,
 	.back {
-		/* display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute; */
-		/* width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0; */
 		backface-visibility: hidden;
-		/* border-radius: 2em;
-		border: 1px solid var(--fg-2);
-		box-sizing: border-box;
-		padding: 2em; */
 	}
 </style>
