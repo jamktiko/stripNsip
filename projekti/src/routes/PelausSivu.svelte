@@ -44,8 +44,8 @@
 </script>
 
 <main>
-	{#if kysymyksenNumero < taulukko.length}
-		<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
+	<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
+		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
 				className="card {flipped ? 'flipped' : ''} $'{className}"
@@ -54,11 +54,10 @@
 				{text}
 				{ikoni}
 			></Kortti>
-		</div>
-	{:else}
-		<div class="pb-10"><img src="./pics/lopetus.svg" alt="" height="650" width="650"></div>
-	{/if}
-
+		{:else}
+			<div class="pb-10"><img src="./pics/lopetus.svg" alt="" height="650" width="650" /></div>
+		{/if}
+	</div>
 
 	<div class="py-15 flex items-center justify-center">
 		<Button
