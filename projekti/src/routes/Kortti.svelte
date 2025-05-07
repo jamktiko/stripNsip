@@ -24,7 +24,11 @@
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
 		<div class="grid grid-cols-1 justify-items-center">
-			<div class="font-josefin absolute top-1/2 -translate-y-1/2 pl-5 pr-5 text-2xl lg:text-3xl">
+			<div
+				class="teksti {flippaus
+					? 'flipped'
+					: ''} font-josefin absolute top-1/2 -translate-y-1/2 pl-5 pr-5 text-2xl lg:text-3xl"
+			>
 				{text}
 			</div>
 			<span class="justify-items-center"
@@ -43,6 +47,14 @@
 </button>
 
 <style>
+	.teksti {
+		transition: transform 0.7s; /* Smooth animaatio */
+		transform: rotateY(180deg); /* Oletusarvo */
+	}
+
+	.teksti.flipped {
+		transform: rotateY(0deg); /* Flippauksen arvo */
+	}
 	.card.flipped {
 		transform: rotateY(0);
 	}
@@ -56,7 +68,7 @@
 		/* height: 400em;
 		background: var(--bg-1);
 		border-radius: 2em; */
-		transform: rotateY(360deg);
+		transform: rotateY(180deg);
 		transition: transform 0.7s;
 		transform-style: preserve-3d;
 		/* padding: 0;
