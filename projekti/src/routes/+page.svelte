@@ -26,7 +26,7 @@
 			id: 1,
 			nimi: 'Näin meidän kesken',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 hover:scale-110 transition-all duration-300 ease-in-out',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 ',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit shadow-xl/30',
 			img: '/pics/favorite2.svg',
@@ -39,7 +39,7 @@
 			id: 2,
 			nimi: 'Kippis ja kulaus',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl hover:shadow-xl/50 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juomapeli text-juomapeliteksti shadow-xl hover:shadow-xl/50 ',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-juompelikakkonen text-juomapeliteksti shadow-xl/30',
 			img: '/pics/juoma.svg',
@@ -52,7 +52,7 @@
 			id: 3,
 			nimi: 'Oletko koskaan',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl hover:shadow-xl/50 transition-all delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl hover:shadow-xl/50 ',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-neverkakkonen text-neverteksti shadow-xl/30',
 			img: '/pics/have.svg',
@@ -84,10 +84,19 @@
 </script>
 
 <main>
-	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
-		{#if ollaanEtusivulla}
+	{#if ollaanEtusivulla}
+		<h1 class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl">
+			Mitä peliä haluat pelata?
+		</h1>
+		<div
+			class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10"
+			in:fly={{ delay: 400, y: 50, duration: 400 }}
+			out:fly={{ y: 50, duration: 300 }}
+		>
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
-		{:else if ollaanPelisivulla}
+		</div>
+	{:else if ollaanPelisivulla}
+		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 			<div class=" sm:col-start-2 sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
@@ -98,6 +107,6 @@
 					bind:ollaanPelisivulla
 				></PelausSivu>
 			</div>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </main>

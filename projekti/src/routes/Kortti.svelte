@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fade, fly, slide } from 'svelte/transition';
 	interface Props {
 		text: string;
 		onclick: () => void;
@@ -24,7 +23,11 @@
 <button {onclick} class="card {flippaus ? 'flipped' : ''} {className}">
 	<div class="front">
 		<div class="grid grid-cols-1 justify-items-center">
-			<div class="font-josefin absolute top-1/2 -translate-y-1/2 pl-5 pr-5 text-2xl lg:text-3xl">
+			<div
+				class="teksti {flippaus
+					? 'flipped'
+					: ''} font-josefin absolute top-1/2 -translate-y-1/2 pl-5 pr-5 text-2xl lg:text-3xl"
+			>
 				{text}
 			</div>
 			<span class="justify-items-center"
@@ -43,40 +46,34 @@
 </button>
 
 <style>
-	.card.flipped {
-		transform: rotateY(0);
+	.teksti {
+		transition: transform 0.7s; /* Smooth animaatio */
+		transform: rotateY(180deg); /* Oletusarvo */
 	}
-	.back {
-		transform: rotateY(180deg);
+
+	.teksti.flipped {
+		transform: rotateY(0deg); /* Flippauksen arvo */
 	}
+
 	.card {
 		position: relative;
-		/* aspect-ratio: 2.5 / 3.5;
-		font-size: min(1vh, 0.25rem); */
-		/* height: 400em;
-		background: var(--bg-1);
-		border-radius: 2em; */
-		transform: rotateY(360deg);
-		transition: transform 0.7s;
+		transform: rotateY(180deg); /* Oletusarvo */
+		transition: transform 0.4s ease-in; /* Lisää smooth animaatio */
 		transform-style: preserve-3d;
-		/* padding: 0;
-		user-select: none; */
 		cursor: pointer;
 	}
-	.front,
-	.back {
-		/* display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute; */
-		/* width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0; */
-		backface-visibility: hidden;
-		/* border-radius: 2em;
-		border: 1px solid var(--fg-2);
-		box-sizing: border-box;
-		padding: 2em; */
+
+	.card.flipped {
+		transform: rotateY(0); /* Flippauksen arvo */
 	}
+
+	.card:hover {
+		transform: scale(1.1) rotateY(var(--rotateY, 180deg)); /* Kasvattaa kokoa säilyttäen kääntöasennon */
+	}
+
+	.card.flipped:hover {
+		transform: scale(1.1) rotateY(0); /* Kasvattaa kokoa, kun kortti on käännetty */
+	}
+
+
 </style>
