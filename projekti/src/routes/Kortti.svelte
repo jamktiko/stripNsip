@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fade, fly, slide } from 'svelte/transition';
 	interface Props {
 		text: string;
 		onclick: () => void;
@@ -59,7 +58,7 @@
 	.card {
 		position: relative;
 		transform: rotateY(180deg); /* Oletusarvo */
-		transition: transform 0.7s ease-in-out; /* Lisää smooth animaatio */
+		transition: transform 0.4s ease-in; /* Lisää smooth animaatio */
 		transform-style: preserve-3d;
 		cursor: pointer;
 	}
