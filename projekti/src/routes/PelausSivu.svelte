@@ -28,9 +28,11 @@
 	let kysymyksenNumero = $state(0);
 	function flippaa() {
 		flipped = !flipped;
+
 		if (flipped) {
 			className = takapuoliTW;
 		}
+
 		text = taulukko[kysymyksenNumero].question;
 		kysymyksenNumero++;
 	}
@@ -42,16 +44,21 @@
 </script>
 
 <main>
-	<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
-		<Kortti
-			flippaus={flipped}
-			className="card {flipped ? 'flipped' : ''} $'{className}"
-			onclick={flippaa}
-			{takapuoliTW}
-			{text}
-			{ikoni}
-		></Kortti>
-	</div>
+	{#if kysymyksenNumero < taulukko.length}
+		<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
+			<Kortti
+				flippaus={flipped}
+				className="card {flipped ? 'flipped' : ''} $'{className}"
+				onclick={flippaa}
+				{takapuoliTW}
+				{text}
+				{ikoni}
+			></Kortti>
+		</div>
+	{:else}
+		<div>Kiitos kun pelasit</div>
+	{/if}
+
 	<div in:fade={{ duration: 1000 }}>
 		<Button
 			tyyli={'bg-tekstit font-josefin max-w-30 min-w-30 hover:shadow-xl/40 flex max-h-10 min-h-10 place-content-center rounded-xl py-2 text-white cursor-pointer'}
