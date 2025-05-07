@@ -55,25 +55,31 @@
 				{ikoni}
 			></Kortti>
 		{:else}
-			<div class="pb-10"><img src="./pics/lopetus.svg" alt="" height="650" width="650" /></div>
+			<div class="grid grid-cols-1 justify-items-center pb-10">
+				<img src="./pics/loppu3.svg" alt="" height="200" width="200" />
+				<h1 class="text-tekstit font-josefin pt-10 text-3xl">Nyt ne loppu :(</h1>
+				<h1 class="text-tekstit font-josefin text-center text-3xl">
+					Mutta ei hätää – etusivulta löytyy lisää seikkailuja!
+				</h1>
+			</div>
 		{/if}
-	</div>
 
-	<div
-		class="py-15 flex items-center justify-center"
-		in:fly={{ delay: 400, duration: 400 }}
-		out:fade={{ duration: 400 }}
-	>
-		<Button
-			tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15 place-content-center rounded-xl py-2 pr-5 text-white cursor-pointer'}
-			text="Takaisin"
-			onclick={siirtymäFunktio}
-			ikoni={'/pics/takaisin.svg'}
-			alt={'nuoli vasemmalle'}
+		<div
+			class="py-15 flex items-center justify-center"
+			in:fly={{ delay: 400, duration: 400 }}
+			out:fade={{ duration: 400 }}
 		>
-			<!-- <span class="material-symbols-outlined md-20"> arrow_back_ios </span>
+			<Button
+				tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15 place-content-center rounded-xl py-2 pr-5 text-white cursor-pointer'}
+				text="Etusivulle"
+				onclick={siirtymäFunktio}
+				ikoni={'/pics/takaisin.svg'}
+				alt={'nuoli vasemmalle'}
+			>
+				<!-- <span class="material-symbols-outlined md-20"> arrow_back_ios </span>
 		<div>Takaisin</div> -->
-		</Button>
+			</Button>
+		</div>
 	</div>
 </main>
 
