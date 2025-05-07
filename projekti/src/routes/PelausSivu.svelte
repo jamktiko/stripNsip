@@ -1,18 +1,29 @@
 <script lang="ts">
 	import type { Kysymykset } from '$lib/kysymykset';
-	import { flip } from 'svelte/animate';
+
 	import Kortti from './Kortti.svelte';
 	import { fade, fly, slide } from 'svelte/transition';
+	import Button from './Button.svelte';
 	interface Props {
 		text: string;
 		className?: string;
 		ikoni?: string;
-		taulukko?: Kysymykset[];
+		taulukko: Kysymykset[];
 		takapuoliTW: string;
+		ollaanEtusivulla: boolean;
+		ollaanPelisivulla: boolean;
 		// onclick: () => void;
 	}
 
-	let { text, className, ikoni, taulukko, takapuoliTW = $bindable() }: Props = $props();
+	let {
+		text,
+		className,
+		ikoni,
+		taulukko,
+		takapuoliTW = $bindable(),
+		ollaanEtusivulla = $bindable(),
+		ollaanPelisivulla = $bindable()
+	}: Props = $props();
 	let flipped = $state(false);
 	let kysymyksenNumero = $state(0);
 	function flippaa() {
@@ -23,11 +34,15 @@
 		text = taulukko[kysymyksenNumero].question;
 		kysymyksenNumero++;
 	}
-	$inspect(text);
+	function siirtymäFunktio() {
+		ollaanEtusivulla = true;
+		ollaanPelisivulla = false;
+		console.log(ollaanEtusivulla);
+	}
 </script>
 
 <main>
-	<div in:fly={{ delay: 200, duration: 1000, x: 300, y: 0 }}>
+	<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
 		<Kortti
 			flippaus={flipped}
 			className="card {flipped ? 'flipped' : ''} $'{className}"
@@ -37,12 +52,18 @@
 			{ikoni}
 		></Kortti>
 	</div>
-	<div
-		class="bg-tekstit font-josefin max-w-30 min-w-30 hover:shadow-xl/40 flex max-h-10 min-h-10 place-content-center rounded-xl py-2 text-white"
+	<div class="justify-center flex py-20" in:fade={{ duration: 1000 }}>
+	<Button
+		tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15  rounded-xl py-2 pr-5 text-white cursor-pointer shadow-xl'}
+		text="Takaisin"
+		onclick={siirtymäFunktio}
+		ikoni={'/pics/takaisin.svg'}
+		alt={'nuoli vasemmalle'}
 	>
-		<span class="material-symbols-outlined md-20"> arrow_back_ios </span>
-		<div>Takaisin</div>
-	</div>
+		<!-- <span class="material-symbols-outlined md-20"> arrow_back_ios </span>
+		<div>Takaisin</div> -->
+	</Button>
+</div>
 </main>
 
 <style>

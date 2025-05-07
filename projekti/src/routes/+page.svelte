@@ -5,8 +5,6 @@
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import PeliNavigaatio from './PeliNavigaatio.svelte';
-	import { dev } from '$app/environment';
-	// import PelausSivu from './pelausSivu.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -66,7 +64,7 @@
 	//vanha koodi ennen objektitaulukkoa
 	let valitutKysymykset: Kysymykset[] = $state([]);
 	let ollaanPelisivulla = $state(false);
-	let olaanEtusivulla = $state(true);
+	let ollaanEtusivulla = $state(true);
 	let valittu = $state(0);
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
@@ -75,7 +73,7 @@
 			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
 		console.log(valitutKysymykset);
 		console.log(korttiPakat[valinta - 1].nimi);
-		olaanEtusivulla = false;
+		ollaanEtusivulla = false;
 		ollaanPelisivulla = true;
 		valittu = valinta - 1;
 		//puuttuu näkyvyystilan vaihto
@@ -86,16 +84,17 @@
 
 <main>
 	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
-		{#if olaanEtusivulla}
+		{#if ollaanEtusivulla}
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		{:else if ollaanPelisivulla}
-			<div class=" sm:justify-items-center">
+			<div class=" col-start-2 sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
 					text={korttiPakat[valittu].nimi}
-					
 					taulukko={valitutKysymykset}
+					bind:ollaanEtusivulla
+					bind:ollaanPelisivulla
 				></PelausSivu>
 			</div>
 		{/if}
