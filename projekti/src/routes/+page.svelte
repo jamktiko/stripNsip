@@ -26,7 +26,7 @@
 			id: 1,
 			nimi: 'Näin meidän kesken',
 			etupuoliTW:
-				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
+				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 hover:scale-110 transition-all duration-300 ease-in-out',
 			takapuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhdeteksti text-tekstit shadow-xl/30',
 			img: '/pics/favorite2.svg',
