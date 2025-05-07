@@ -56,7 +56,7 @@
 			></Kortti>
 		</div>
 	{:else}
-		<div class="pb-10"><img src="./pics/loppu2.svg" alt="" height="150" width="150"></div>
+		<div class="pb-10"><img src="./pics/loppu3.svg" alt="" height="650" width="650"></div>
 	{/if}
 
 
