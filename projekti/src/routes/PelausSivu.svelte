@@ -52,7 +52,7 @@
 			{ikoni}
 		></Kortti>
 	</div>
-	<div class="justify-center flex py-20">
+	<div class="justify-center flex py-20" in:fade={{ duration: 1000 }}>
 	<Button
 		tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15  rounded-xl py-2 pr-5 text-white cursor-pointer shadow-xl'}
 		text="Takaisin"
