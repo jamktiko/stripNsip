@@ -44,7 +44,7 @@
 </script>
 
 <main>
-	<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
+	<div in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
@@ -59,7 +59,11 @@
 		{/if}
 	</div>
 
-	<div class="py-15 flex items-center justify-center" in:fade={{ delay: 200, duration: 1000 }}>
+	<div
+		class="py-15 flex items-center justify-center"
+		in:fly={{ delay: 400, duration: 400 }}
+		out:fade={{ duration: 400 }}
+	>
 		<Button
 			tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15 place-content-center rounded-xl py-2 pr-5 text-white cursor-pointer'}
 			text="Takaisin"

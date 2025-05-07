@@ -84,10 +84,15 @@
 </script>
 
 <main>
-	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
-		{#if ollaanEtusivulla}
+	{#if ollaanEtusivulla}<div
+			class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10"
+			in:fly={{ delay: 400, y: 50, duration: 400 }}
+			out:fly={{ y: 50, duration: 300 }}
+		>
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
-		{:else if ollaanPelisivulla}
+		</div>
+	{:else if ollaanPelisivulla}
+		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 			<div class=" sm:col-start-2 sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
@@ -98,6 +103,6 @@
 					bind:ollaanPelisivulla
 				></PelausSivu>
 			</div>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </main>
