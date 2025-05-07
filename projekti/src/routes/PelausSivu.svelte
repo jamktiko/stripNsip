@@ -56,7 +56,7 @@
 			></Kortti>
 		</div>
 	{:else}
-		<div class="h-auto w-auto pb-20"><img src="./pics/lopetus.svg" alt=""></div>
+		<div class="pb-10"><img src="./pics/lopetus.svg" alt="" height="650" width="650"></div>
 	{/if}
 
 	<div class="py-15 flex items-center justify-center">
