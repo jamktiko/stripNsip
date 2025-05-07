@@ -8,7 +8,7 @@
 		text: string;
 		className?: string;
 		ikoni?: string;
-		taulukko?: Kysymykset[];
+		taulukko: Kysymykset[];
 		takapuoliTW: string;
 		ollaanEtusivulla: boolean;
 		ollaanPelisivulla: boolean;
@@ -42,7 +42,7 @@
 </script>
 
 <main>
-	<div in:fly={{ delay: 200, duration: 1000, x: 300, y: 0 }}>
+	<div in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}>
 		<Kortti
 			flippaus={flipped}
 			className="card {flipped ? 'flipped' : ''} $'{className}"
