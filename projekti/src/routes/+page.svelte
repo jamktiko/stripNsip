@@ -88,10 +88,7 @@
 		{#if ollaanEtusivulla}
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		{:else if ollaanPelisivulla}
-			<div
-				class=" sm:col-start-2 sm:justify-items-center"
-				in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}
-			>
+			<div class=" sm:col-start-2 sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
