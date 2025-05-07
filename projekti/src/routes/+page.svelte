@@ -84,6 +84,9 @@
 </script>
 
 <main>
+	<!-- <h1 class=" font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-4xl">
+		Mitä peliä haluat pelata?
+	</h1> -->
 	<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 		{#if ollaanEtusivulla}
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />

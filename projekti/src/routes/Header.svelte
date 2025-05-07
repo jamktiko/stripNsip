@@ -4,7 +4,7 @@
 
 	let { otsikko, logo }: { otsikko: string; logo: string } = $props();
 	// pitää muokata myöhemmin miten otsikkoNaytetaan arvo määräytyy
-	let otsikkoNaytetaan = true;
+	// let otsikkoNaytetaan = true;
 	let popupIkkunaNaytetaan = $state(false);
 </script>
 
@@ -24,13 +24,13 @@
 		/>
 	</div>
 
-	{#if otsikkoNaytetaan}
+	<!-- {#if otsikkoNaytetaan}
 		<h1
 			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl"
 		>
 			{otsikko}
 		</h1>
-	{/if}
+	{/if} -->
 </header>
 
 <Popup {popupIkkunaNaytetaan}>
@@ -53,9 +53,8 @@
 		<h1 class="pb-2 pt-8 text-center text-2xl">Strip 'n Sip</h1>
 	</div>
 	<p class="sm:px-30 px-5 py-2 text-center text-xl">
-		Tämä peli pistää porukan puhumaan, paljastamaan ja nauramaan – joskus jopa yllättymään. Pehmeitä
-		paljastuksia -kategoria kutsuu syvällisiin keskusteluihin, Kippis ja kulaus esittää ronskimpia
-		kysymyksiä ja tehtäviä illanviettoon. Onko tullut kokeiltua? toimii puolestaan hauskana
+		Tämä peli pistää porukan puhumaan, paljastamaan ja nauramaan – joskus jopa yllättymään. Näin meidän kesken -kategoria kutsuu syvällisiin keskusteluihin, Kippis ja kulaus esittää ronskimpia
+		kysymyksiä ja tehtäviä illanviettoon. Oletko koskaan toimii puolestaan hauskana
 		jäänmurtajana uusien tuttavuuksien kanssa. Pelaaminen on helppoa: valitse korttipakka, napauta,
 		ja vastaa kysymykseen tai tee tehtävä – yksin tai yhdessä.
 	</p>
