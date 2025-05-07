@@ -59,7 +59,7 @@
 		<div>Kiitos kun pelasit</div>
 	{/if}
 
-	<div class="flex items-center justify-center py-15" in:fade={{ duration: 1000 }}>
+	<div class="py-15 flex items-center justify-center">
 		<Button
 			tyyli={'bg-tekstit text-2xl font-josefin max-w-45 min-w-45 hover:shadow-xl/40 flex items-center justify-center max-h-15 min-h-15 place-content-center rounded-xl py-2 pr-5 text-white cursor-pointer'}
 			text="Takaisin"

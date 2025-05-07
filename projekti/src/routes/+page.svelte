@@ -5,6 +5,7 @@
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import PeliNavigaatio from './PeliNavigaatio.svelte';
+	import { fade, fly, slide } from 'svelte/transition';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -87,7 +88,10 @@
 		{#if ollaanEtusivulla}
 			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		{:else if ollaanPelisivulla}
-			<div class=" sm:col-start-2 sm:justify-items-center">
+			<div
+				class=" sm:col-start-2 sm:justify-items-center"
+				in:fly={{ delay: 200, duration: 1000, x: 1000, y: 0 }}
+			>
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
