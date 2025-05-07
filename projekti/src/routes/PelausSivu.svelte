@@ -56,7 +56,10 @@
 			></Kortti>
 		</div>
 	{:else}
-		<div class="pb-10"><img src="./pics/loppu3.svg" alt="" height="650" width="650"></div>
+		<div class="pb-10 grid grid-cols-1 justify-items-center"><img src="./pics/loppu3.svg" alt="" height="200" width="200">
+		<h1 class="text-tekstit font-josefin text-3xl pt-10">Nyt ne loppu! </h1>
+		<h1 class="text-tekstit font-josefin text-3xl text-center">Mutta ei hätää – etusivulta löytyy lisää seikkailuja!</h1>
+		</div>
 	{/if}
 
 
