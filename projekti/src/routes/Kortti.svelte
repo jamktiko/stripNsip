@@ -75,8 +75,5 @@
 		transform: scale(1.1) rotateY(0); /* Kasvattaa kokoa, kun kortti on käännetty */
 	}
 
-	.front,
-	.back {
-		backface-visibility: hidden;
-	}
+
 </style>
