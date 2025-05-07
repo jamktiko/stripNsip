@@ -33,7 +33,9 @@
 			className = takapuoliTW;
 		}
 
-		text = taulukko[kysymyksenNumero].question;
+		setTimeout(() => {
+			text = taulukko[kysymyksenNumero].question;
+		}, 200);
 		kysymyksenNumero++;
 	}
 	function siirtymäFunktio() {
