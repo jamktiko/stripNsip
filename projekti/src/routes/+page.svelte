@@ -23,7 +23,7 @@
 	let korttiPakat: KorttiPakka[] = [
 		{
 			id: 1,
-			nimi: 'Pehmeitä paljastuksia',
+			nimi: 'Näin meidän kesken',
 			etupuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-parisuhde text-parisuhdeteksti shadow-xl hover:shadow-xl/50 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
 			takapuoliTW:
@@ -49,7 +49,7 @@
 		},
 		{
 			id: 3,
-			nimi: 'Onko tullut kokeiltua',
+			nimi: 'Oletko koskaan',
 			etupuoliTW:
 				'm-10 grid h-80 w-60 lg:h-85 lg:w-70 2xl:h-96 2xl:w-80 rounded-xl border-8 border-white bg-never text-neverteksti shadow-xl hover:shadow-xl/50 transition-all delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110',
 			takapuoliTW:
