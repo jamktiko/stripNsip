@@ -2,7 +2,7 @@
 	import Button from './Button.svelte';
 	import Popup from './Popup.svelte';
 
-	let { otsikko, logo }: { otsikko: string; logo: string } = $props();
+	let { otsikko, logo }: { otsikko?: string; logo: string } = $props();
 	// pitää muokata myöhemmin miten otsikkoNaytetaan arvo määräytyy
 	// let otsikkoNaytetaan = true;
 	let popupIkkunaNaytetaan = $state(false);
