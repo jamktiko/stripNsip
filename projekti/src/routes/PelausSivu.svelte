@@ -56,7 +56,7 @@
 			></Kortti>
 		</div>
 	{:else}
-		<div>Kiitos kun pelasit</div>
+		<div class="h-auto w-auto"><img src="./pics/lopetus.svg" alt=""></div>
 	{/if}
 
 	<div class="py-15 flex items-center justify-center">
