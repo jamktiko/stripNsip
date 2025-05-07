@@ -55,21 +55,27 @@
 	.teksti.flipped {
 		transform: rotateY(0deg); /* Flippauksen arvo */
 	}
-	.card.flipped {
-		transform: rotateY(0);
-	}
-	.back {
-		transform: rotateY(180deg);
-	}
+
 	.card {
 		position: relative;
-
-		transform: rotateY(180deg);
-		transition: transform 0.7s;
+		transform: rotateY(180deg); /* Oletusarvo */
+		transition: transform 0.7s ease-in-out; /* Lisää smooth animaatio */
 		transform-style: preserve-3d;
-
 		cursor: pointer;
 	}
+
+	.card.flipped {
+		transform: rotateY(0); /* Flippauksen arvo */
+	}
+
+	.card:hover {
+		transform: scale(1.1) rotateY(var(--rotateY, 180deg)); /* Kasvattaa kokoa säilyttäen kääntöasennon */
+	}
+
+	.card.flipped:hover {
+		transform: scale(1.1) rotateY(0); /* Kasvattaa kokoa, kun kortti on käännetty */
+	}
+
 	.front,
 	.back {
 		backface-visibility: hidden;
