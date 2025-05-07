@@ -5,7 +5,6 @@
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import PeliNavigaatio from './PeliNavigaatio.svelte';
-	// import PelausSivu from './pelausSivu.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
