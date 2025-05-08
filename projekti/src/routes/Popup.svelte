@@ -1,29 +1,30 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import { scale } from 'svelte/transition';
+
 	interface Props {
 		header?: Snippet;
 		children: Snippet;
 		footer?: Snippet;
-    popupIkkunaNaytetaan: boolean
+    popupIkkunaNaytetaan: boolean;
 	}
 
 	let { header, children, footer, popupIkkunaNaytetaan }: Props = $props();
-
-	import { scale } from 'svelte/transition';
 </script>
 
 {#if popupIkkunaNaytetaan}
 <div class="backdrop"></div>
 
-<!-- animaatiot modal diville -->
-<!-- transition:slide={{ duration: 500 }} -->
-<div class=" modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10 overflow-y-auto" transition:scale={{ duration: 300 }}>
+<div 
+	class="modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10 overflow-y-auto" 
+	transition:scale={{ duration: 300 }}
+>
 	<header>
 		{@render header?.()}
 	</header>
 
 	
-		{@render children()}
+	{@render children()}
 	
 
 	<footer>

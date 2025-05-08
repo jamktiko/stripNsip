@@ -7,6 +7,7 @@
     korttiPakat: KorttiPakka[];
     korttiPakanValinta: (valinta: number) => void;
   }
+
   let { korttiPakat, korttiPakanValinta }: Props = $props();
 </script>
 
@@ -21,14 +22,14 @@
 	in:fly={{ delay: 400, y: 50, duration: 400 }}
 	out:fly={{ y: 50, duration: 300 }}
 >
-{#each korttiPakat as pakka, i}
-	<div class={pakka.asettelu}>
-		<Kortti 
-			className={pakka.etupuoliTW} 
-			onclick={() => korttiPakanValinta(pakka.id)} 
-			text={pakka.nimi}
-			ikoni={pakka.img} 
-		/>
-	</div>
-{/each}
+	{#each korttiPakat as pakka}
+		<div class={pakka.asettelu}>
+			<Kortti 
+				className={pakka.etupuoliTW} 
+				onclick={() => korttiPakanValinta(pakka.id)} 
+				text={pakka.nimi}
+				ikoni={pakka.img} 
+			/>
+		</div>
+	{/each}
 </div>

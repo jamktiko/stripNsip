@@ -2,35 +2,21 @@
 	import Button from './Button.svelte';
 	import Popup from './Popup.svelte';
 
-	let { otsikko, logo }: { otsikko?: string; logo: string } = $props();
-	// pitää muokata myöhemmin miten otsikkoNaytetaan arvo määräytyy
-	// let otsikkoNaytetaan = true;
+	let { logo }: { logo: string } = $props();
+
 	let popupIkkunaNaytetaan = $state(false);
 </script>
 
-<header class=" place grid grid-cols-2 content-evenly gap-4 px-20">
-	<img class=" w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
+<header class="place grid grid-cols-2 content-evenly gap-4 px-20">
+	<img class="w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
 
-	<div class=" grid items-center justify-end">
-		<!-- <Button 
-		text="?" 
-		onclick={() => (popupIkkunaNaytetaan = true)} 
-		tyyli={'text-3xl sm:text-4xl hover:shadow-xl border-4 border-tekstit cursor-pointer hover:bg-tekstit py-1 px-4 rounded-full text-tekstit hover:text-white'} 
-		/> -->
+	<div class="grid items-center justify-end">
 		<Button
 			text="?"
 			onclick={() => (popupIkkunaNaytetaan = true)}
 			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
 		/>
 	</div>
-
-	<!-- {#if otsikkoNaytetaan}
-		<h1
-			class=" font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl"
-		>
-			{otsikko}
-		</h1>
-	{/if} -->
 </header>
 
 <Popup {popupIkkunaNaytetaan}>
