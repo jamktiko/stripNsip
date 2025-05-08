@@ -37,7 +37,7 @@
 
 			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli:
-				'handicap rounded-md bg-parisuhdeteksti  py-2 font-medium text-parisuhde text-2xl'
+				' rounded-md bg-parisuhdeteksti py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 2,
@@ -51,8 +51,8 @@
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-items-center',
-			saavutettavuusTyyli: '',
-			saavutettavuusTekstiTyyli: ''
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli: 'rounded-md bg-juompelikakkonen  py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 3,
@@ -66,8 +66,8 @@
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-self-start',
-			saavutettavuusTyyli: '',
-			saavutettavuusTekstiTyyli: ''
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli: 'rounded-md bg-neverkakkonen py-2 font-medium text-tekstit text-2xl'
 		}
 	];
 	//vanha koodi ennen objektitaulukkoa

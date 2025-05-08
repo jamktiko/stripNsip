@@ -46,7 +46,7 @@
 			</span>
 			{#if pelaaNakyvyys}
 				<div class={saavutettavuusTyyli}>
-					<div class={saavutettavuusTekstinTyyli}>Pelaa</div>
+					<div class="handicap {saavutettavuusTekstinTyyli}">Pelaa</div>
 				</div>
 			{/if}
 		</div>
