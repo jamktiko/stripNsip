@@ -9,6 +9,8 @@
 		takapuoliTW?: string;
 		alt?: string;
 		pelaaNakyvyys?: boolean;
+		saavutettavuusTyyli?: string;
+		saavutettavuusTekstinTyyli?: string;
 	}
 	let {
 		text,
@@ -18,7 +20,9 @@
 		flippaus = $bindable(),
 		takapuoliTW = $bindable(),
 		alt,
-		pelaaNakyvyys
+		pelaaNakyvyys,
+		saavutettavuusTyyli,
+		saavutettavuusTekstinTyyli
 	}: Props = $props();
 </script>
 
@@ -41,12 +45,8 @@
 				/>
 			</span>
 			{#if pelaaNakyvyys}
-				<div class="absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3">
-					<div
-						class="handicap rounded-md bg-parisuhdeteksti  py-2 font-medium text-parisuhde text-2xl"
-					>
-						Pelaa
-					</div>
+				<div class={saavutettavuusTyyli}>
+					<div class={saavutettavuusTekstinTyyli}>Pelaa</div>
 				</div>
 			{/if}
 		</div>

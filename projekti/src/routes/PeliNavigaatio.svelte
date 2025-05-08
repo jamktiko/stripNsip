@@ -20,6 +20,8 @@
 			text={pakka.nimi}
 			ikoni={pakka.img}
 			{pelaaNakyvyys}
+			saavutettavuusTyyli={pakka.saavutettavuusTyyli}
+			saavutettavuusTekstinTyyli={pakka.saavutettavuusTekstiTyyli}
 		/>
 	</div>
 {/each}

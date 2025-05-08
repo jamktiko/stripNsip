@@ -33,7 +33,11 @@
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-self-end'
+			asettelu: 'sm:justify-self-end',
+
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli:
+				'handicap rounded-md bg-parisuhdeteksti  py-2 font-medium text-parisuhde text-2xl'
 		},
 		{
 			id: 2,
@@ -46,7 +50,9 @@
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-items-center'
+			asettelu: 'sm:justify-items-center',
+			saavutettavuusTyyli: '',
+			saavutettavuusTekstiTyyli: ''
 		},
 		{
 			id: 3,
@@ -59,7 +65,9 @@
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-self-start'
+			asettelu: 'sm:justify-self-start',
+			saavutettavuusTyyli: '',
+			saavutettavuusTekstiTyyli: ''
 		}
 	];
 	//vanha koodi ennen objektitaulukkoa
