@@ -24,7 +24,7 @@
 		ollaanEtusivulla = $bindable(),
 		ollaanPelisivulla = $bindable()
 	}: Props = $props();
-	let motimenee = $state('Paina nappulaa');
+	let motimenee = $state('Napauta korttia aloittaaksesi pelin!');
 	let flipped = $state(false);
 	let kysymyksenNumero = $state(0);
 	function flippaa() {
@@ -58,7 +58,7 @@
 		{motimenee}
 	</h1>
 
-	<div class="justify-items-center" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
+	<div in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
