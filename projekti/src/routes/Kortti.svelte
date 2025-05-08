@@ -41,9 +41,9 @@
 				/>
 			</span>
 			{#if pelaaNakyvyys}
-				<div class=" h-16 w-56 rounded-lg bg-neutral-500 outline-[3px] outline-offset-[-3px]">
+				<div class="absolute bottom-5 w-full text-center">
 					<div
-						class="handicap items-end justify-center font-['Josefin_Sans'] text-4xl font-normal text-teal-100"
+						class="handicap rounded-md bg-gray-500 px-12 py-2 font-medium text-white hover:bg-gray-600"
 					>
 						Pelaa
 					</div>
