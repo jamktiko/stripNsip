@@ -1,0 +1,25 @@
+[ oma-feature-branch ]
+        |
+        v
+[ git checkout develop ]
+        |
+        v
+[ git pull origin develop ]   <-- (Hae uusimmat muutokset GitHubista)
+        |
+        v
+[ git checkout oma-feature-branch ]
+        |
+        v
+[ git merge develop ]         <-- (Päivitä oma branch developin muutoksilla)
+        |
+        v
+[ Ratkaise mahdolliset konfliktit ja commit ]
+        |
+        v
+[ git checkout develop ]
+        |
+        v
+[ git merge oma-feature-branch ]  <-- (Yhdistä oma feature developiin)
+        |
+        v
+[ git push origin develop ]    <-- (Puske GitHubiin)

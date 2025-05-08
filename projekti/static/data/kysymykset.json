@@ -1,0 +1,362 @@
+[
+	{
+		"id": 1,
+		"question": "Mikä on lempimuistosi yhdessä viettämästämme ajasta?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 2,
+		"question": "Mikä on yksi asia, jota arvostat minussa eniten?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 3,
+		"question": "Mikä on unelmasi, jonka haluaisit toteuttaa yhdessä?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 4,
+		"question": "Mikä on paras tapa, jolla voin osoittaa rakkauttani sinulle?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 5,
+		"question": "Mikä on ollut haastavin hetki suhteessamme, ja miten selvisimme siitä?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 6,
+		"question": "Mikä on yksi asia, jonka haluaisit minun tietävän sinusta paremmin?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 7,
+		"question": "Mikä on suosikkipiirteesi suhteessamme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 8,
+		"question": "Mikä on paras tapa viettää yhteistä aikaa mielestäsi?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 9,
+		"question": "Mikä on suurin toiveesi tulevaisuudellemme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 10,
+		"question": "Mikä on ollut ikimuistoisin lahja, jonka olet saanut minulta?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 11,
+		"question": "Mikä on yksi asia, jonka haluaisit tehdä kanssani, mutta emme ole vielä tehneet?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 12,
+		"question": "Mikä on paras tapa, jolla voimme vahvistaa suhdettamme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 13,
+		"question": "Mikä on yksi asia, joka saa sinut tuntemaan olosi rakastetuksi?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 14,
+		"question": "Mikä on ollut hauskin hetki, jonka olemme kokeneet yhdessä?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 15,
+		"question": "Mikä on yksi asia, jota haluaisit parantaa suhteessamme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 16,
+		"question": "Mikä on tärkein oppitunti, jonka olet oppinut suhteestamme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 17,
+		"question": "Mikä on suosikkitapasi viettää aikaa kanssani?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 18,
+		"question": "Mikä on yksi asia, joka tekee sinut onnelliseksi suhteessamme?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 19,
+		"question": "Mikä on suurin unelmasi meille kahdelle?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 20,
+		"question": "Mikä on yksi asia, jonka haluaisit minun muistavan aina?",
+		"genrenNimi": "Näin meidän kesken",
+		"genre": 1
+	},
+	{
+		"id": 21,
+		"question": "Kaikki kenellä on päällä T-paita, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 22,
+		"question": "Kaikki, jotka ovat syntyneet kesällä, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 23,
+		"question": "Kaikki, joilla on siniset silmät, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 24,
+		"question": "Kaikki, jotka ovat käyttäneet aurinkolaseja tänään, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 25,
+		"question": "Kaikki, jotka ovat matkustaneet ulkomaille viimeisen vuoden aikana, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 26,
+		"question": "Kaikki, jotka omistavat lemmikin, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 27,
+		"question": "Kaikki, jotka ovat pukeutuneet mustaan, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 28,
+		"question": "Kaikki, jotka ovat myöhästyneet viimeisen viikon aikana, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 29,
+		"question": "Kaikki, jotka osaavat soittaa jotain instrumenttia, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 30,
+		"question": "Kaikki, jotka ovat olleet hereillä yli 18 tuntia, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 31,
+		"question": "Kaikki, jotka ovat katsoneet elokuvan viimeisen viikon aikana, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 32,
+		"question": "Kaikki, jotka ovat käyttäneet julkista liikennettä tänään, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 33,
+		"question": "Kaikki, jotka ovat syöneet pizzaa viimeisen viikon aikana, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 34,
+		"question": "Kaikki, jotka osaavat puhua kolmea tai useampaa kieltä, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 35,
+		"question": "Kaikki, jotka ovat käyneet kuntosalilla viimeisen viikon aikana, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 36,
+		"question": "Kaikki, jotka ovat käyttäneet hattua tänään, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 37,
+		"question": "Kaikki, jotka ovat olleet lomalla viimeisen kuukauden aikana, juovat shotin",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 38,
+		"question": "Kaikki, jotka ovat juoneet kahvia tänään, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 39,
+		"question": "Kaikki, jotka ovat käyttäneet farkkuja tänään, juovat kaksi huikkaa",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 40,
+		"question": "Kaikki, jotka ovat käyneet suihkussa tänään, juovat yhden huikan",
+		"genrenNimi": "Kippis ja kulaus",
+		"genre": 2
+	},
+	{
+		"id": 41,
+		"question": "Oletko koskaan ollut käsiraudoissa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 42,
+		"question": "Oletko koskaan unohtanut jonkun tärkeän syntymäpäivän",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 43,
+		"question": "Oletko koskaan valehdellut saadaksesi itsesi pois pulasta",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 44,
+		"question": "Oletko koskaan syönyt jotain, joka oli pudonnut lattialle",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 45,
+		"question": "Oletko koskaan matkustanut yksin ulkomaille",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 46,
+		"question": "Oletko koskaan rikkonut vahingossa jotain arvokasta",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 47,
+		"question": "Oletko koskaan ollut myöhässä tärkeästä tapaamisesta",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 48,
+		"question": "Oletko koskaan unohtanut maksaa laskua ajoissa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 49,
+		"question": "Oletko koskaan eksynyt vieraassa kaupungissa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 50,
+		"question": "Oletko koskaan ollut mukana jossain, mitä kadut",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 51,
+		"question": "Oletko koskaan syönyt jotain, mitä et tiennyt mitä se oli",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 52,
+		"question": "Oletko koskaan ollut lentokoneessa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 53,
+		"question": "Oletko koskaan unohtanut jonkun nimen heti esittelyn jälkeen",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 54,
+		"question": "Oletko koskaan ollut yöllä yksin metsässä",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 55,
+		"question": "Oletko koskaan tehnyt jotain spontaania, joka muutti elämäsi",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 56,
+		"question": "Oletko koskaan ollut TV:ssä tai radiossa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 57,
+		"question": "Oletko koskaan unohtanut avaimiasi kotiin",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 58,
+		"question": "Oletko koskaan ollut mukana onnettomuudessa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 59,
+		"question": "Oletko koskaan nauranut niin paljon, että aloit itkeä",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	},
+	{
+		"id": 60,
+		"question": "Oletko koskaan unohtanut jotain tärkeää tapahtumaa",
+		"genrenNimi": "Oletko koskaan",
+		"genre": 3
+	}
+]
