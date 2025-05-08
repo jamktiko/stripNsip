@@ -9,6 +9,8 @@
   }
 
   let { korttiPakat, korttiPakanValinta }: Props = $props();
+
+	let pelaaNakyvyys = true;
 </script>
 
 <h1 class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl" 
@@ -29,6 +31,9 @@
 				onclick={() => korttiPakanValinta(pakka.id)} 
 				text={pakka.nimi}
 				ikoni={pakka.img} 
+				{pelaaNakyvyys}
+				saavutettavuusTyyli={pakka.saavutettavuusTyyli}
+				saavutettavuusTekstinTyyli={pakka.saavutettavuusTekstiTyyli}
 			/>
 		</div>
 	{/each}
