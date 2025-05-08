@@ -1,11 +1,9 @@
 <script lang="ts">
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
-	import Kortti from './Kortti.svelte';
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
-	import PeliNavigaatio from './PeliNavigaatio.svelte';
-	import { fade, fly, slide } from 'svelte/transition';
+	import PelinValinta from './PelinValinta.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -33,7 +31,11 @@
 			alt: 'sydän',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-self-end'
+			asettelu: 'sm:justify-self-end',
+
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli:
+				' rounded-md bg-rose-200 py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 2,
@@ -46,7 +48,9 @@
 			alt: 'tuoppi',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-items-center'
+			asettelu: 'sm:justify-items-center',
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli: 'rounded-md bg-yellow-100  py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 3,
@@ -59,10 +63,12 @@
 			alt: 'vaaka',
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
-			asettelu: 'sm:justify-self-start'
+			asettelu: 'sm:justify-self-start',
+			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTekstiTyyli: 'rounded-md bg-neverkakkonen py-2 font-medium text-tekstit text-2xl'
 		}
 	];
-	//vanha koodi ennen objektitaulukkoa
+
 	let valitutKysymykset: Kysymykset[] = $state([]);
 	let ollaanPelisivulla = $state(false);
 	let ollaanEtusivulla = $state(true);
@@ -77,20 +83,13 @@
 		ollaanEtusivulla = false;
 		ollaanPelisivulla = true;
 		valittu = valinta - 1;
-		//puuttuu näkyvyystilan vaihto
-		//valitun kortin propsien vieminen pelisivulle
 	}
 	$inspect(valitutKysymykset);
 </script>
 
 <main>
-	{#if ollaanEtusivulla}<div
-			class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10"
-			in:fly={{ delay: 400, y: 50, duration: 400 }}
-			out:fly={{ y: 50, duration: 300 }}
-		>
-			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
-		</div>
+	{#if ollaanEtusivulla}
+		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 			<div class=" sm:col-start-2 sm:justify-items-center">

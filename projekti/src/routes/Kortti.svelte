@@ -8,6 +8,9 @@
 		flippaus?: boolean;
 		takapuoliTW?: string;
 		alt?: string;
+		pelaaNakyvyys?: boolean;
+		saavutettavuusTyyli?: string;
+		saavutettavuusTekstinTyyli?: string;
 	}
 	let {
 		text,
@@ -16,7 +19,10 @@
 		ikoni,
 		flippaus = $bindable(),
 		takapuoliTW = $bindable(),
-		alt
+		alt,
+		pelaaNakyvyys,
+		saavutettavuusTyyli,
+		saavutettavuusTekstinTyyli
 	}: Props = $props();
 </script>
 
@@ -38,14 +44,22 @@
 		2xl:absolute"
 				/>
 			</span>
+			{#if pelaaNakyvyys}
+				<div class={saavutettavuusTyyli}>
+					<div class="handicap {saavutettavuusTekstinTyyli}">Pelaa</div>
+				</div>
+			{/if}
 		</div>
 	</div>
-	<div class="back}">
+	<div class="back">
 		<div></div>
 	</div>
 </button>
 
 <style>
+	.handicap {
+		rotate: y 180deg;
+	}
 	.teksti {
 		transition: transform 0.7s; /* Smooth animaatio */
 		transform: rotateY(180deg); /* Oletusarvo */
@@ -74,6 +88,4 @@
 	.card.flipped:hover {
 		transform: scale(1.1) rotateY(0); /* Kasvattaa kokoa, kun kortti on käännetty */
 	}
-
-
 </style>

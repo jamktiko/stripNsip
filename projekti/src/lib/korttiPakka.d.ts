@@ -8,4 +8,6 @@ export interface KorttiPakka {
 	imgTWEtupuoli: string;
 	imgTWTakapuoli: string;
 	asettelu: string;
+	saavutettavuusTyyli: string;
+	saavutettavuusTekstiTyyli: string;
 }
