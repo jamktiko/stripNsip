@@ -8,6 +8,7 @@
 		flippaus?: boolean;
 		takapuoliTW?: string;
 		alt?: string;
+		ollaanEtusivulla?: boolean;
 	}
 	let {
 		text,
@@ -16,7 +17,8 @@
 		ikoni,
 		flippaus = $bindable(),
 		takapuoliTW = $bindable(),
-		alt
+		alt,
+		ollaanEtusivulla
 	}: Props = $props();
 </script>
 
@@ -38,14 +40,26 @@
 		2xl:absolute"
 				/>
 			</span>
+			{#if ollaanEtusivulla}
+				<div class=" h-16 w-56 rounded-lg bg-neutral-500 outline-[3px] outline-offset-[-3px]">
+					<div
+						class="handicap items-end justify-center font-['Josefin_Sans'] text-4xl font-normal text-teal-100"
+					>
+						Pelaa
+					</div>
+				</div>
+			{/if}
 		</div>
 	</div>
-	<div class="back}">
+	<div class="back">
 		<div></div>
 	</div>
 </button>
 
 <style>
+	.handicap {
+		rotate: y 180deg;
+	}
 	.teksti {
 		transition: transform 0.7s; /* Smooth animaatio */
 		transform: rotateY(180deg); /* Oletusarvo */
@@ -74,6 +88,4 @@
 	.card.flipped:hover {
 		transform: scale(1.1) rotateY(0); /* Kasvattaa kokoa, kun kortti on käännetty */
 	}
-
-
 </style>
