@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { Kysymykset } from '$lib/kysymykset';
 	import { onMount } from 'svelte';
-	// import Kortti from './Kortti.svelte';
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import PelinValinta from './PelinValinta.svelte';
@@ -62,7 +61,7 @@
 			asettelu: 'sm:justify-self-start'
 		}
 	];
-	//vanha koodi ennen objektitaulukkoa
+
 	let valitutKysymykset: Kysymykset[] = $state([]);
 	let ollaanPelisivulla = $state(false);
 	let ollaanEtusivulla = $state(true);
@@ -77,8 +76,6 @@
 		ollaanEtusivulla = false;
 		ollaanPelisivulla = true;
 		valittu = valinta - 1;
-		//puuttuu näkyvyystilan vaihto
-		//valitun kortin propsien vieminen pelisivulle
 	}
 	$inspect(valitutKysymykset);
 </script>
@@ -88,14 +85,14 @@
 		<!-- <h1 class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl">
 			Mitä peliä haluat pelata?
 		</h1> -->
-		<div
+		<!-- <div
 			class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10"
 			in:fly={{ delay: 400, y: 50, duration: 400 }}
 			out:fly={{ y: 50, duration: 300 }}
 		>
 			<PelinValinta {korttiPakat} {korttiPakanValinta} />
-		</div>
-		<!-- <PelinValinta {korttiPakat} {korttiPakanValinta} /> -->
+		</div> -->
+		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
 			<div class=" sm:col-start-2 sm:justify-items-center">
