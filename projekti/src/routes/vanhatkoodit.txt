@@ -45,6 +45,17 @@
 				></Kortti>
 			</div> -->
 
+	<!-- <h1 class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl">
+			Mitä peliä haluat pelata?
+		</h1> -->
+		<!-- <div
+			class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10"
+			in:fly={{ delay: 400, y: 50, duration: 400 }}
+			out:fly={{ y: 50, duration: 300 }}
+		>
+			<PelinValinta {korttiPakat} {korttiPakanValinta} />
+		</div> -->
+
 // PeliNavigaatio.svelte
 	// let kysymys = $state('');
 	// let valittuPakka = $state(0);
@@ -115,3 +126,8 @@
 </script>
 
 <button {onclick}>{text}</button>
+
+<!-- <button class="text-3xl sm:text-4xl hover:shadow-xl border-4 border-tekstit cursor-pointer hover:bg-tekstit py-1 px-4 rounded-full text-tekstit hover:text-white" {onclick}>{text}</button> -->
+<!-- <button
+class="border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl" 
+{onclick}>{text}</button> -->
