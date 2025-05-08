@@ -89,7 +89,7 @@
 			in:fly={{ delay: 400, y: 50, duration: 400 }}
 			out:fly={{ y: 50, duration: 300 }}
 		>
-			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} {ollaanEtusivulla} />
+			<PeliNavigaatio {korttiPakat} {korttiPakanValinta} />
 		</div>
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">

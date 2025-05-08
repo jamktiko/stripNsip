@@ -5,10 +5,9 @@
 	interface Props {
 		korttiPakat: KorttiPakka[];
 		korttiPakanValinta: (valinta: number) => void;
-		ollaanEtusivulla: boolean;
 	}
-	let { korttiPakat, korttiPakanValinta, ollaanEtusivulla }: Props = $props();
-
+	let { korttiPakat, korttiPakanValinta }: Props = $props();
+	let pelaaNakyvyys = true;
 	// let ollaanEtusivulla: boolean = $state(true);
 </script>
 
@@ -20,7 +19,7 @@
 			onclick={() => korttiPakanValinta(pakka.id)}
 			text={pakka.nimi}
 			ikoni={pakka.img}
-			{ollaanEtusivulla}
+			{pelaaNakyvyys}
 		/>
 	</div>
 {/each}

@@ -8,7 +8,7 @@
 		flippaus?: boolean;
 		takapuoliTW?: string;
 		alt?: string;
-		ollaanEtusivulla?: boolean;
+		pelaaNakyvyys?: boolean;
 	}
 	let {
 		text,
@@ -18,7 +18,7 @@
 		flippaus = $bindable(),
 		takapuoliTW = $bindable(),
 		alt,
-		ollaanEtusivulla
+		pelaaNakyvyys
 	}: Props = $props();
 </script>
 
@@ -40,7 +40,7 @@
 		2xl:absolute"
 				/>
 			</span>
-			{#if ollaanEtusivulla}
+			{#if pelaaNakyvyys}
 				<div class=" h-16 w-56 rounded-lg bg-neutral-500 outline-[3px] outline-offset-[-3px]">
 					<div
 						class="handicap items-end justify-center font-['Josefin_Sans'] text-4xl font-normal text-teal-100"
