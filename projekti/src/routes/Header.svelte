@@ -50,9 +50,9 @@
 		</div>
 	{/snippet}
 	<div>
-		<h1 class="pb-2 pt-8 text-center text-2xl">Strip 'n Sip</h1>
+		<h1 class="pb-2 pt-8 text-center text-3xl">Strip 'n Sip</h1>
 	</div>
-	<p class="sm:px-30 px-5 py-2 text-center text-xl">
+	<p class="sm:px-30 px-5 py-2 text-center text-2xl">
 		Tämä peli pistää porukan puhumaan, paljastamaan ja nauramaan – joskus jopa yllättymään. Pehmeitä
 		paljastuksia -kategoria kutsuu syvällisiin keskusteluihin, Kippis ja kulaus esittää ronskimpia
 		kysymyksiä ja tehtäviä illanviettoon. Onko tullut kokeiltua? toimii puolestaan hauskana
@@ -60,8 +60,8 @@
 		ja vastaa kysymykseen tai tee tehtävä – yksin tai yhdessä.
 	</p>
 	{#snippet footer()}
-		<h2 class="pb-2 pt-5 text-center text-2xl">Tekijät</h2>
-		<p class=" py-2 pb-8 text-center text-xl">
+		<h2 class="pb-2 pt-5 text-center text-3xl">Tekijät</h2>
+		<p class=" py-2 pb-8 text-center text-2xl">
 			Jeremia Vepsäläinen, Sanni Pöykiö, Aino Seppi, Samuli Ilomäki
 		</p>
 	{/snippet}
