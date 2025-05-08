@@ -24,6 +24,7 @@
 		ollaanEtusivulla = $bindable(),
 		ollaanPelisivulla = $bindable()
 	}: Props = $props();
+	let motimenee = $state('Paina nappulaa');
 	let flipped = $state(false);
 	let kysymyksenNumero = $state(0);
 	function flippaa() {
@@ -37,6 +38,9 @@
 			text = taulukko[kysymyksenNumero].question;
 		}, 200);
 		kysymyksenNumero++;
+		if (kysymyksenNumero >= taulukko.length) {
+			motimenee = '';
+		}
 	}
 	function siirtymäFunktio() {
 		ollaanEtusivulla = true;
@@ -46,6 +50,14 @@
 </script>
 
 <main>
+	<h1
+		class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl"
+		in:fade={{ delay: 400, duration: 400 }}
+		out:fade={{ duration: 300 }}
+	>
+		{motimenee}
+	</h1>
+
 	<div in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
