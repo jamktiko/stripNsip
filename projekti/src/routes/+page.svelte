@@ -37,7 +37,7 @@
 
 			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli:
-				' rounded-md bg-parisuhdeteksti py-2 font-medium text-tekstit text-2xl'
+				' rounded-md bg-rose-200 py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 2,
@@ -52,7 +52,7 @@
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-items-center',
 			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
-			saavutettavuusTekstiTyyli: 'rounded-md bg-juompelikakkonen  py-2 font-medium text-tekstit text-2xl'
+			saavutettavuusTekstiTyyli: 'rounded-md bg-yellow-100  py-2 font-medium text-tekstit text-2xl'
 		},
 		{
 			id: 3,
