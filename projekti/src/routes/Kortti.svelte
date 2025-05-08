@@ -41,9 +41,9 @@
 				/>
 			</span>
 			{#if pelaaNakyvyys}
-				<div class="absolute bottom-5 w-full text-center">
+				<div class="absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3">
 					<div
-						class="handicap rounded-md bg-gray-500 px-12 py-2 font-medium text-white hover:bg-gray-600"
+						class="handicap rounded-md bg-parisuhdeteksti  py-2 font-medium text-parisuhde text-2xl"
 					>
 						Pelaa
 					</div>
