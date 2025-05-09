@@ -58,7 +58,7 @@
 		{motimenee}
 	</h1>
 
-	<div class="justify-items-center pt-3" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
+	<div class="grid justify-items-center pt-3" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
@@ -70,7 +70,7 @@
 			></Kortti>
 		{:else}
 			<div class="grid grid-cols-1 justify-items-center pb-10">
-				<img src="./pics/loppu3.svg" alt="" height="200" width="200" />
+				<img src="./pics/loppu4.svg" alt="" height="200" width="200" />
 				<h1 class="text-tekstit font-josefin pt-10 text-3xl">Nyt ne loppu :(</h1>
 				<h1 class="text-tekstit font-josefin text-center text-3xl">
 					Mutta ei hätää – etusivulta löytyy lisää seikkailuja!
