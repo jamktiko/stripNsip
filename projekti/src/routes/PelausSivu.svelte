@@ -58,7 +58,7 @@
 		{motimenee}
 	</h1>
 
-	<div class="justify-items-center pt-3" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
+	<div class="grid justify-items-center pt-3" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
