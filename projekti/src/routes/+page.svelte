@@ -91,7 +91,7 @@
 	{#if ollaanEtusivulla}
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
-		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
+		<div class="grid justify-items-center px-3 sm:grid-cols-3 sm:px-10">
 			<div class=" sm:col-start-2 sm:justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
