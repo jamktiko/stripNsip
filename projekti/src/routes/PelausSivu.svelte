@@ -70,7 +70,7 @@
 			></Kortti>
 		{:else}
 			<div class="grid grid-cols-1 justify-items-center pb-10">
-				<img src="./pics/loppu3.svg" alt="" height="200" width="200" />
+				<img src="./pics/loppu4.svg" alt="" height="200" width="200" />
 				<h1 class="text-tekstit font-josefin pt-10 text-3xl">Nyt ne loppu :(</h1>
 				<h1 class="text-tekstit font-josefin text-center text-3xl">
 					Mutta ei hätää – etusivulta löytyy lisää seikkailuja!

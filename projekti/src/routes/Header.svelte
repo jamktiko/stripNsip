@@ -7,14 +7,14 @@
 	let popupIkkunaNaytetaan = $state(false);
 </script>
 
-<header class="place grid grid-cols-2 content-evenly gap-4 px-20">
+<header class="place grid grid-cols-2 content-evenly gap-4 px-10 sm:px-20">
 	<img class="w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
 
 	<div class="grid items-center justify-end">
 		<Button
 			text="?"
 			onclick={() => (popupIkkunaNaytetaan = true)}
-			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
+			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer transform transition duration-300 ease-out hover:-translate-y-2 hover:scale-105 rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
 		/>
 	</div>
 </header>
