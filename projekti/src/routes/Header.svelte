@@ -14,7 +14,7 @@
 		<Button
 			text="?"
 			onclick={() => (popupIkkunaNaytetaan = true)}
-			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
+			tyyli={'border-tekstit hover:bg-tekstit text-tekstit cursor-pointer transform transition duration-300 ease-out hover:-translate-y-2 hover:scale-105 rounded-full border-4 px-4 py-1 text-3xl hover:text-white hover:shadow-xl sm:text-4xl'}
 		/>
 	</div>
 </header>
