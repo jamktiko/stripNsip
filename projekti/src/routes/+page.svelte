@@ -75,11 +75,15 @@
 	let ollaanPelisivulla = $state(false);
 	let ollaanEtusivulla = $state(true);
 	let valittu = $state(0);
+	const user = new Kayttaja();
+	let kysymystenMaara = $state(user.korttienMaara);
+
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
 			.filter((kysymys) => kysymys.genre === valinta)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
-			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
+			// .slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
+			.slice(0, kysymystenMaara);
 		console.log(valitutKysymykset);
 		console.log(korttiPakat[valinta - 1].nimi);
 		ollaanEtusivulla = false;
@@ -87,11 +91,18 @@
 		valittu = valinta - 1;
 	}
 	$inspect(valitutKysymykset);
-	// const user = new Kayttaja();
+	$inspect(user.korttienMaara);
 </script>
 
 <main>
 	{#if ollaanEtusivulla}
+		<p>Valitse kysymyskorttien määrä:</p>
+		<select bind:value={kysymystenMaara}>
+			<option value=6>5</option>
+			<option value=11>10</option>
+			<option value=16>15</option>
+			<option value=21>20</option>
+		</select>
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-3 sm:grid-cols-3 sm:px-10">
