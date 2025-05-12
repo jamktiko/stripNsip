@@ -33,7 +33,7 @@
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-self-end',
 
-			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTyyli: 'absolute bottom-5 left-1/2 transform -translate-x-1/2 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli:
 				' rounded-md bg-rose-100 py-2 font-medium text-tekstit text-2xl'
 		},
@@ -49,7 +49,7 @@
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-items-center',
-			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTyyli: 'absolute bottom-5 left-1/2 transform -translate-x-1/2 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli: 'rounded-md bg-yellow-100  py-2 font-medium text-tekstit text-2xl'
 		},
 		{
@@ -64,7 +64,7 @@
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-self-start',
-			saavutettavuusTyyli: 'absolute bottom-5 w-50 text-center px-6 sm:px-2 pb-3',
+			saavutettavuusTyyli: 'absolute bottom-5 left-1/2 transform -translate-x-1/2 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli: 'rounded-md bg-neverkakkonen py-2 font-medium text-tekstit text-2xl'
 		}
 	];
@@ -91,8 +91,8 @@
 	{#if ollaanEtusivulla}
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
-		<div class="grid justify-items-center px-5 sm:grid-cols-3 sm:px-10">
-			<div class=" sm:col-start-2 sm:justify-items-center">
+		<div class="grid justify-items-center px-5 lg:grid-cols-3 sm:px-10">
+			<div class=" col-start-2 justify-items-center">
 				<PelausSivu
 					className={korttiPakat[valittu].etupuoliTW}
 					takapuoliTW={korttiPakat[valittu].takapuoliTW}
