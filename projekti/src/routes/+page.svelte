@@ -6,6 +6,7 @@
 	import PelinValinta from './PelinValinta.svelte';
 	import { Kayttaja } from '$lib/kayttaja.svelte';
 	import Button from './Button.svelte';
+	import { fade } from 'svelte/transition';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -75,11 +76,15 @@
 	let ollaanPelisivulla = $state(false);
 	let ollaanEtusivulla = $state(true);
 	let valittu = $state(0);
+	const user = new Kayttaja();
+	let kysymystenMaara = $state(user.korttienMaara);
+
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
 			.filter((kysymys) => kysymys.genre === valinta)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
-			.slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
+			// .slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
+			.slice(0, kysymystenMaara);
 		console.log(valitutKysymykset);
 		console.log(korttiPakat[valinta - 1].nimi);
 		ollaanEtusivulla = false;
@@ -87,11 +92,27 @@
 		valittu = valinta - 1;
 	}
 	$inspect(valitutKysymykset);
-	// const user = new Kayttaja();
+	$inspect(user.korttienMaara);
 </script>
 
 <main>
 	{#if ollaanEtusivulla}
+		<div in:fade={{ delay: 400, duration: 400 }} out:fade={{ duration: 300 }}>
+			<div class="grid grid-cols-1 justify-items-center">
+			<h2 class="text-tekstit text-3xl font-josefin text-center px-10 pt-5">Pelaa 10 kysymyskorttia tai valitse korttien määrä:</h2>
+			
+<div class="p-5">
+			<select class="rounded-xl border-2 border-tekstit bg-slate-100 font-josefin text-xl text-tekstit" bind:value={kysymystenMaara}>
+				<option value=6>5</option>
+				<option value=16>15</option>
+				<option value=21>20</option>
+				<option value=31>30</option>
+				<option value=51>50</option>
+			</select>
+</div>
+			</div>
+		</div>
+
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-5 lg:grid-cols-3 sm:px-10">
