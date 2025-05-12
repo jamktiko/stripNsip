@@ -6,6 +6,7 @@
 	import PelinValinta from './PelinValinta.svelte';
 	import { Kayttaja } from '$lib/kayttaja.svelte';
 	import Button from './Button.svelte';
+	import { fade } from 'svelte/transition';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -96,13 +97,20 @@
 
 <main>
 	{#if ollaanEtusivulla}
-		<p>Valitse kysymyskorttien määrä:</p>
-		<select bind:value={kysymystenMaara}>
-			<option value=6>5</option>
-			<option value=11>10</option>
-			<option value=16>15</option>
-			<option value=21>20</option>
-		</select>
+		<div in:fade={{ delay: 400, duration: 400 }} out:fade={{ duration: 300 }}>
+			<h2>Pelaa 10 kysymyskorttia</h2>
+			<h2>tai</h2>
+			<h2>Valitse korttien määrä:</h2>
+
+			<select bind:value={kysymystenMaara}>
+				<option value=6>5</option>
+				<option value=16>15</option>
+				<option value=21>20</option>
+				<option value=31>30</option>
+				<option value=51>50</option>
+			</select>
+		</div>
+
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
 	{:else if ollaanPelisivulla}
 		<div class="grid justify-items-center px-3 sm:grid-cols-3 sm:px-10">

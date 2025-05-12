@@ -1,7 +1,7 @@
 import type { KayttajaAsetukset } from '$lib/kayttajaAsetukset';
 
 class Kayttaja {
-	private user: KayttajaAsetukset = $state({ normaaliTeema: true, korttienMaara: 10 });
+	private user: KayttajaAsetukset = $state({ normaaliTeema: true, korttienMaara: 11 });
 
 	get normaaliTeema() {
 		return this.user.normaaliTeema;
