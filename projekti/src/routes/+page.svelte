@@ -4,6 +4,8 @@
 	import PelausSivu from './PelausSivu.svelte';
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import PelinValinta from './PelinValinta.svelte';
+	import { Kayttaja } from '$lib/kayttaja.svelte';
+	import Button from './Button.svelte';
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
@@ -85,6 +87,7 @@
 		valittu = valinta - 1;
 	}
 	$inspect(valitutKysymykset);
+	// const user = new Kayttaja();
 </script>
 
 <main>

@@ -7,7 +7,7 @@
 	let popupIkkunaNaytetaan = $state(false);
 </script>
 
-<header class="place grid grid-cols-2 content-evenly gap-4 px-20">
+<header class="place grid grid-cols-2 content-evenly gap-4 px-10 sm:px-20">
 	<img class="w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
 
 	<div class="grid items-center justify-end">
