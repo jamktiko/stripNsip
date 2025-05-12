@@ -15,7 +15,7 @@
 			'from-taustakeltanen via-taustasininen to-taustapunanen inset-0 -z-10 min-h-screen bg-gradient-to-br'
 		) {
 			teema =
-				'from-taustapunanen via-taustakeltanen to-taustasininen inset-0 -z-10 min-h-screen bg-gradient-to-br';
+				'from-pink-400 via-sky-300 to-orange-300 inset-0 -z-10 min-h-screen bg-gradient-to-br';
 		} else {
 			teema =
 				'from-taustakeltanen via-taustasininen to-taustapunanen inset-0 -z-10 min-h-screen bg-gradient-to-br';

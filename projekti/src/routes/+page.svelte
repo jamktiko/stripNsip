@@ -98,17 +98,19 @@
 <main>
 	{#if ollaanEtusivulla}
 		<div in:fade={{ delay: 400, duration: 400 }} out:fade={{ duration: 300 }}>
-			<h2>Pelaa 10 kysymyskorttia</h2>
-			<h2>tai</h2>
-			<h2>Valitse korttien määrä:</h2>
-
-			<select bind:value={kysymystenMaara}>
+			<div class="grid grid-cols-1 justify-items-center">
+			<h2 class="text-tekstit text-3xl font-josefin text-center px-10 pt-5">Pelaa 10 kysymyskorttia tai valitse korttien määrä:</h2>
+			
+<div class="p-5">
+			<select class="rounded-xl border-2 border-tekstit bg-slate-100 font-josefin text-xl text-tekstit" bind:value={kysymystenMaara}>
 				<option value=6>5</option>
 				<option value=16>15</option>
 				<option value=21>20</option>
 				<option value=31>30</option>
 				<option value=51>50</option>
 			</select>
+</div>
+			</div>
 		</div>
 
 		<PelinValinta {korttiPakat} {korttiPakanValinta} />
