@@ -72,7 +72,7 @@
 	.card {
 		position: relative;
 		transform: rotateY(180deg); /* Oletusarvo */
-		transition: transform 0.4s ease-in; /* Lisää smooth animaatio */
+		transition: transform 0.2s ease-in; /* Lisää smooth animaatio */
 		transform-style: preserve-3d;
 		cursor: pointer;
 	}
