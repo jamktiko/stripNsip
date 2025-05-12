@@ -41,7 +41,7 @@
 	<p class="sm:px-30 px-5 py-2 text-center text-xl">
 		Tämä peli pistää porukan puhumaan, paljastamaan ja nauramaan – joskus jopa yllättymään. Näin meidän kesken -kategoria kutsuu syvällisiin keskusteluihin, Kippis ja kulaus esittää ronskimpia
 		kysymyksiä ja tehtäviä illanviettoon. Oletko koskaan toimii puolestaan hauskana
-		jäänmurtajana uusien tuttavuuksien kanssa. Pelaaminen on helppoa: valitse korttipakka, napauta,
+		jäänmurtajana uusien tuttavuuksien kanssa. Pelaaminen on helppoa: valitse pelin pituus ja korttipakka, napauta,
 		ja vastaa kysymykseen tai tee tehtävä – yksin tai yhdessä.
 	</p>
 	{#snippet footer()}
