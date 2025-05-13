@@ -30,7 +30,7 @@
 		<Button
 			text="Teema"
 			onclick={vaihdaTeema}
-			tyyli="flex cursor-pointer place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40 transform transition duration-300 ease-out hover:-translate-y-2 hover:scale-105"
+			tyyli="flex cursor-pointer place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40 transform transition duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:bg-tekstit hover:text-white"
 		/>
 		<Header logo="./pics/logo.svg" />
 	</div>
