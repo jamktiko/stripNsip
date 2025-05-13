@@ -61,7 +61,7 @@
 		rotate: y 180deg;
 	}
 	.teksti {
-		transition: transform 0.7s; /* Smooth animaatio */
+		transition: transform 0.6s; /* Smooth animaatio */
 		transform: rotateY(180deg); /* Oletusarvo */
 	}
 
