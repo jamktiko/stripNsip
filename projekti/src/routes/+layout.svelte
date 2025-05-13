@@ -25,17 +25,17 @@
 </script>
 
 <div class={teema}>
-	<div class="pt-5">
-    <!-- <button class="flex place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40" onclick={vaihdaTeema}>Teema</button> -->
-		<Button 
-			text="Teema" 
-			onclick={vaihdaTeema} 
-			tyyli="flex place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40" 
+	<div class=" pt-5">
+		<!-- <button class="flex place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40" onclick={vaihdaTeema}>Teema</button> -->
+		<Button
+			text="Teema"
+			onclick={vaihdaTeema}
+			tyyli="flex cursor-pointer place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40"
 		/>
-    <Header logo="./pics/logo.svg" />
+		<Header logo="./pics/logo.svg" />
 	</div>
 	<main>
-    {@render children()}
+		{@render children()}
 	</main>
 	<!-- <div class="inset-0 -z-10 min-h-screen bg-gradient-to-br from-green-500 via-blue-500 to-red-500"> -->
 </div>
