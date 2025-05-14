@@ -9,7 +9,7 @@
 
 	// Importit ennen tätä----- Muuttujat tämän jälkeen
 
-	let kaikkiKysymykset: Kysymykset[] = $state([]);
+	let kaikkiKysymykset: Kysymykset[] = $state([]); //alustetaan kaikkiKysymykset tyhjällä taulukolla
 
 	onMount(async () => {
 		const response = await fetch('/data/kysymykset.json');
@@ -17,10 +17,10 @@
 			throw new Error('cannot fetch the data');
 		}
 		kaikkiKysymykset = await response.json();
-	});
-	$inspect(kaikkiKysymykset);
+	}); // Hakee json tiedostosta kysymykset kaikkiKysymykset taulukkoon
+	// $inspect(kaikkiKysymykset); //toiminnan testaamista varten
 
-	//objektiTaulukko
+	//objektiTaulukko Jatkoideana olisi tämän laittaminen globaaliksi
 	let korttiPakat: KorttiPakka[] = [
 		{
 			id: 1,
@@ -75,29 +75,28 @@
 	];
 
 	let valitutKysymykset: Kysymykset[] = $state([]);
-	let ollaanPelisivulla = $state(false);
+
 	let ollaanEtusivulla = $state(true);
 	let valittu = $state(0);
 	const user = new Kayttaja();
 	let kysymystenMaara = $state(user.korttienMaara);
-
+	// Functiot tämän jälkeen
 	function korttiPakanValinta(valinta: number) {
 		valitutKysymykset = kaikkiKysymykset
 			.filter((kysymys) => kysymys.genre === valinta)
 			.sort(() => Math.random() - 0.5) // sekottaa pakan
-			// .slice(0, 15); // ottaa 15 ensimmäistä kysymystä;
-			.slice(0, kysymystenMaara);
-		console.log(valitutKysymykset);
-		console.log(korttiPakat[valinta - 1].nimi);
-		ollaanEtusivulla = false;
-		ollaanPelisivulla = true;
+			//
+			.slice(0, kysymystenMaara); // määrittää kysymysten määrän taulukossa valitun muuttujan arvon mukaan
+		// console.log(valitutKysymykset);
+		// console.log(korttiPakat[valinta - 1].nimi); testaamista varten
+		ollaanEtusivulla = false; //vaihtaa sivun etusivulta pelisivulle
 		valittu = valinta - 1;
 	}
 	// $inspect(valitutKysymykset); Toiminnan testaamista varten
 	// $inspect(user.korttienMaara); Toiminnan testaamista varten
 </script>
 
-{#if ollaanEtusivulla}
+{#if ollaanEtusivulla}<!--Etusivun ja pelisivun näkyvyyden muuttamista varten-->
 	<div in:fade={{ delay: 400, duration: 400 }} out:fade={{ duration: 300 }}>
 		<div class="grid grid-cols-1 justify-items-center">
 			<h2 class="text-tekstit font-josefin px-10 pt-5 text-center text-3xl">
@@ -108,7 +107,7 @@
 				<select
 					class="border-tekstit font-josefin text-tekstit cursor-pointer rounded-xl border-2 bg-slate-100 text-xl"
 					bind:value={kysymystenMaara}
-				>
+					><!-- Korttien määrän valinta-->
 					<option value="6">5</option>
 					<option value="16">15</option>
 					<option value="21">20</option>
@@ -120,7 +119,7 @@
 	</div>
 
 	<PelinValinta {korttiPakat} {korttiPakanValinta} />
-{:else if ollaanPelisivulla}
+{:else}
 	<div class="grid justify-items-center px-5 sm:px-10 lg:grid-cols-3">
 		<div class=" col-start-2 justify-items-center">
 			<PelausSivu
@@ -129,7 +128,6 @@
 				text={korttiPakat[valittu].nimi}
 				taulukko={valitutKysymykset}
 				bind:ollaanEtusivulla
-				bind:ollaanPelisivulla
 			></PelausSivu>
 		</div>
 	</div>

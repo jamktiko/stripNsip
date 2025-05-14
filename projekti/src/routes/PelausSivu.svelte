@@ -10,7 +10,6 @@
 		taulukko: Kysymykset[];
 		takapuoliTW: string;
 		ollaanEtusivulla: boolean;
-		ollaanPelisivulla: boolean;
 	}
 
 	let {
@@ -19,8 +18,7 @@
 		ikoni,
 		taulukko,
 		takapuoliTW = $bindable(),
-		ollaanEtusivulla = $bindable(),
-		ollaanPelisivulla = $bindable()
+		ollaanEtusivulla = $bindable()
 	}: Props = $props();
 	//propsit ylhäällä, Alhaalla alustetaan muuttujat
 
@@ -53,7 +51,7 @@
 	}
 	function siirtymäFunktio() {
 		ollaanEtusivulla = true;
-		ollaanPelisivulla = false;
+
 		// console.log(ollaanEtusivulla); Testausta varten
 	}
 </script>
