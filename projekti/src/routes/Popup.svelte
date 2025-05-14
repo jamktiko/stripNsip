@@ -13,6 +13,7 @@
 </script>
 
 {#if popupIkkunaNaytetaan}
+	<!-- tumma läpikuultava tausta, jonka päälle tulee valkoinen div infoikkunaksi -->
 	<div class="backdrop"></div>
 
 	<div 
