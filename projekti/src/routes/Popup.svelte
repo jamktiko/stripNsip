@@ -13,24 +13,25 @@
 </script>
 
 {#if popupIkkunaNaytetaan}
-<div class="backdrop"></div>
+	<!-- tumma läpikuultava tausta, jonka päälle tulee valkoinen div infoikkunaksi -->
+	<div class="backdrop"></div>
 
-<div 
-	class="modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10 overflow-y-auto" 
-	transition:scale={{ duration: 300 }}
->
-	<header>
-		{@render header?.()}
-	</header>
+	<div 
+		class="modal bg-slate-100 font-josefin text-tekstit flex flex-col rounded-xl my-10 overflow-y-auto" 
+		transition:scale={{ duration: 300 }}
+	>
+		<header>
+			{@render header?.()}
+		</header>
 
-	
-	{@render children()}
-	
+		
+		{@render children()}
+		
 
-	<footer>
-		{@render footer?.()}
-	</footer>
-</div>
+		<footer>
+			{@render footer?.()}
+		</footer>
+	</div>
 {/if}
 
 <style>
