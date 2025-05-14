@@ -93,8 +93,8 @@
 		ollaanPelisivulla = true;
 		valittu = valinta - 1;
 	}
-	$inspect(valitutKysymykset);
-	$inspect(user.korttienMaara);
+	// $inspect(valitutKysymykset); Toiminnan testaamista varten
+	// $inspect(user.korttienMaara); Toiminnan testaamista varten
 </script>
 
 {#if ollaanEtusivulla}

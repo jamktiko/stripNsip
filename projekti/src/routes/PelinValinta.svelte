@@ -3,19 +3,21 @@
 	import type { KorttiPakka } from '$lib/korttiPakka';
 	import { fly, fade } from 'svelte/transition';
 
-  interface Props {
-    korttiPakat: KorttiPakka[];
-    korttiPakanValinta: (valinta: number) => void;
-  }
+	interface Props {
+		korttiPakat: KorttiPakka[];
+		korttiPakanValinta: (valinta: number) => void;
+	}
 
-  let { korttiPakat, korttiPakanValinta }: Props = $props();
+	let { korttiPakat, korttiPakanValinta }: Props = $props();
 
-	let pelaaNakyvyys = true;
+	let pelinValintaNakyy = true;
 </script>
 
-<h1 class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl" 
+<h1
+	class="font-josefin text-tekstit col-span-2 flex items-center justify-center py-10 text-center text-4xl md:text-5xl"
 	in:fade={{ delay: 400, duration: 400 }}
-	out:fade={{ duration: 300 }}>
+	out:fade={{ duration: 300 }}
+>
 	Mitä peliä haluat pelata?
 </h1>
 
@@ -26,12 +28,12 @@
 >
 	{#each korttiPakat as pakka}
 		<div class={pakka.asettelu}>
-			<Kortti 
-				className={pakka.etupuoliTW} 
-				onclick={() => korttiPakanValinta(pakka.id)} 
+			<Kortti
+				className={pakka.etupuoliTW}
+				onclick={() => korttiPakanValinta(pakka.id)}
 				text={pakka.nimi}
-				ikoni={pakka.img} 
-				{pelaaNakyvyys}
+				ikoni={pakka.img}
+				{pelinValintaNakyy}
 				saavutettavuusTyyli={pakka.saavutettavuusTyyli}
 				saavutettavuusTekstinTyyli={pakka.saavutettavuusTekstiTyyli}
 			/>
