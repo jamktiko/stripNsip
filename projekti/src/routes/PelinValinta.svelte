@@ -26,6 +26,8 @@
 	in:fly={{ delay: 400, y: 50, duration: 400 }}
 	out:fly={{ y: 50, duration: 300 }}
 >
+	<!-- korttiPakat-taulukossa olevat objektit sisältävät korttipakkojen tiedot -->
+	<!-- each-rakenteella renderöidään näkyviin kaikki korttipakat -->
 	{#each korttiPakat as pakka}
 		<div class={pakka.asettelu}>
 			<Kortti

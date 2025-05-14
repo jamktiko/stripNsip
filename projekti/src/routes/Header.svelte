@@ -11,6 +11,7 @@
 	<img class="w-45 h-45 py-5" src={logo} alt="Strip 'n Sip logo" />
 
 	<div class="grid items-center justify-end">
+		<!-- nappula, jota klikkaamalla avautuu infoikkuna -->
 		<Button
 			text="?"
 			onclick={() => (popupIkkunaNaytetaan = true)}
@@ -27,6 +28,7 @@
 				<img src="./pics/help.png" alt="Ohje" class="min-v-20 min-w-20 max-w-20" />
 			</div>
 			<div class="order-3">
+				<!-- nappula, jota klikkaamalla infoikkuna sulkeutuu -->
 				<Button
 					text="x"
 					onclick={() => (popupIkkunaNaytetaan = false)}

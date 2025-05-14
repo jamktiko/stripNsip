@@ -63,7 +63,7 @@
 		rotate: y 180deg;
 	}
 	.teksti {
-		transition: transform 0.7s;
+		transition: transform 0.6s;
 		transform: rotateY(180deg);
 	}
 
