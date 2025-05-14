@@ -26,7 +26,6 @@
 
 <div class={teema}>
 	<div class="pt-5">
-		<!-- nappula, josta voi vaihtaa sivun taustavärin -->
 		<Button
 			text="Teema"
 			onclick={vaihdaTeema}
