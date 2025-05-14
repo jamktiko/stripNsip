@@ -1,8 +1,7 @@
 <script lang="ts">
 	import type { Kysymykset } from '$lib/kysymykset';
-
 	import Kortti from './Kortti.svelte';
-	import { fade, fly, slide } from 'svelte/transition';
+	import { fade, fly } from 'svelte/transition';
 	import Button from './Button.svelte';
 	interface Props {
 		text: string;
@@ -12,7 +11,6 @@
 		takapuoliTW: string;
 		ollaanEtusivulla: boolean;
 		ollaanPelisivulla: boolean;
-		// onclick: () => void;
 	}
 
 	let {
@@ -24,28 +22,39 @@
 		ollaanEtusivulla = $bindable(),
 		ollaanPelisivulla = $bindable()
 	}: Props = $props();
-	let motimenee = $state('Aloita peli napauttamalla korttia!');
+	//propsit ylhäällä, Alhaalla alustetaan muuttujat
+
+	let ohjeistusTeksti = $state('Aloita peli napauttamalla korttia!');
 	let flipped = $state(false);
 	let kysymyksenNumero = $state(0);
+	// functiot alapuolella
+
 	function flippaa() {
 		flipped = !flipped;
 
 		if (flipped) {
 			className = takapuoliTW;
-		}
+		} //tyylitys vaihtuu kortin takapuolelle ekan flippauksen jälkeen. Ei pidä vaihtua kuin vain kerran
 
 		setTimeout(() => {
 			text = taulukko[kysymyksenNumero].question;
 		}, 200);
+		//Kysymyksen vaihtuminen halutaan viiveellä, jotta sitä ei näe kun se vaihtuu ( vaihtuu flippausanimaation puolessa välissä)
 		kysymyksenNumero++;
+		if (kysymyksenNumero > 0 && kysymyksenNumero < taulukko.length - 1) {
+			ohjeistusTeksti = 'Napauta korttia uudestaan!';
+			// pelin ohjeistusta varten, kun korttia on painettu kerran. mutta ei ole viimeinen kerta ennen tekstin katoamista
+		} else {
+			ohjeistusTeksti = 'Vielä viimeisen kerran!';
+		} // ohjeistus käyttäjälle että nyt tulee viimeinen kysymys
 		if (kysymyksenNumero >= taulukko.length) {
-			motimenee = '';
-		}
+			ohjeistusTeksti = '';
+		} //halutaan kadottaa teksti kun viimeinen kysymys on napautettu pois
 	}
 	function siirtymäFunktio() {
 		ollaanEtusivulla = true;
 		ollaanPelisivulla = false;
-		console.log(ollaanEtusivulla);
+		// console.log(ollaanEtusivulla); Testausta varten
 	}
 </script>
 
@@ -55,10 +64,16 @@
 		in:fade={{ delay: 400, duration: 400 }}
 		out:fade={{ duration: 300 }}
 	>
-		{motimenee}
+		<!--Ohjeistustekstin animaatio-->
+		{ohjeistusTeksti}
 	</h1>
 
-	<div class="grid justify-items-center pt-3" in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }} out:fade={{ duration: 400 }}>
+	<div
+		class="grid justify-items-center pt-3"
+		in:fly={{ delay: 300, duration: 400, x: 1000, y: 0 }}
+		out:fade={{ duration: 400 }}
+	>
+		<!-- korttien animaatio-->
 		{#if kysymyksenNumero < taulukko.length}
 			<Kortti
 				flippaus={flipped}
@@ -69,6 +84,7 @@
 				{ikoni}
 			></Kortti>
 		{:else}
+			<!--Kun korttipakka on tyhjä, halutaan näkyviin nämä asiat jotka kehottavat pelaamaan uudestaan, ja ohjeistavat miten pääsee pelaamaan uudelleen-->
 			<div class="grid grid-cols-1 justify-items-center pb-10">
 				<img src="./pics/loppu4.svg" alt="" height="200" width="200" />
 				<h1 class="text-tekstit font-josefin pt-10 text-3xl">Nyt ne loppu :(</h1>
@@ -90,8 +106,7 @@
 				ikoni={'/pics/takaisin.svg'}
 				alt={'nuoli vasemmalle'}
 			>
-				<!-- <span class="material-symbols-outlined md-20"> arrow_back_ios </span>
-		<div>Takaisin</div> -->
+				<!-- Takaisin pelinvalintamenuun siirtymistä varten oleva button -->
 			</Button>
 		</div>
 	</div>
