@@ -123,5 +123,5 @@ This project is licensed under the CC BY-SA 4.0 License - see the LICENSE.md fil
 
 ## Acknowledgments
 
-Dribble
-Coolors
+- Dribble
+- Coolors
