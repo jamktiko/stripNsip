@@ -2,14 +2,14 @@
 	import '../app.css';
 	import Header from './Header.svelte';
 	import type { Snippet } from 'svelte';
-	import { Kayttaja } from '$lib/kayttaja.svelte';
 	import Button from './Button.svelte';
 
 	let { children }: { children: Snippet } = $props();
-	const user = new Kayttaja();
+
 	let teema = $state(
 		'from-taustakeltanen via-taustasininen to-taustapunanen inset-0 -z-10 min-h-screen bg-gradient-to-br'
 	);
+
 	function vaihdaTeema() {
 		if (
 			teema ===
@@ -25,8 +25,8 @@
 </script>
 
 <div class={teema}>
-	<div class=" pt-5">
-		<!-- <button class="flex place-content-center mx-auto py-1 border-solid border-4 border-tekstit font-josefin text-tekstit text-xl max-w-30 min-w-30 max-h-10 min-h-10 rounded-xl hover:shadow-xl/40" onclick={vaihdaTeema}>Teema</button> -->
+	<div class="pt-5">
+		<!-- nappula, josta voi vaihtaa sivun taustavärin -->
 		<Button
 			text="Teema"
 			onclick={vaihdaTeema}

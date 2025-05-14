@@ -34,7 +34,6 @@
 			imgTWEtupuoli: 'min-w-20 max-w-20 max-w-20',
 			imgTWTakapuoli: 'min-w-20 max-w-20 max-w-20',
 			asettelu: 'sm:justify-self-end',
-
 			saavutettavuusTyyli:
 				'absolute bottom-5 left-1/2 transform -translate-x-1/2 w-50 text-center px-6 sm:px-2 pb-3',
 			saavutettavuusTekstiTyyli: ' rounded-md bg-rose-100 py-2 font-medium text-tekstit text-2xl'
